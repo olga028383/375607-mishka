@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Бордадын](https://up.htmlacademy.ru/adaptive/10/user/375607).
-* Наставник: `Неизвестно`.
+* Наставник: `Игорь Дерябин`.
 
 ---
 
