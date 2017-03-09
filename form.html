@@ -11,7 +11,33 @@
           <div class="page-header__logo">
             <img src="http://placehold.it/90x40" alt="">
           </div>
-          <span class='page-header__button js-button-menu'>Кнопка меню</span>
+          <span class='page-header__button js-button-menu'>
+			<img src="http://placehold.it/15x20" alt="">
+		  </span>
+          <nav class="nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="/" class="nav-menu__link">Каталог товаров</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="/" class="nav-menu__link">Вязание на заказ</a>
+              </li>
+              <li class="nav-menu__item">
+                <label class="field">
+                  <i class="field__search-icon">
+                    <img src="http://placehold.it/25x25" alt="">
+                  </i>
+                  <input class="field__search" type="search" >
+                </label>
+              </li>
+              <li class="nav-menu__item">
+                <i class="nav-menu__icon">
+                  <img src="http://placehold.it/25x25" alt="">
+                </i>
+                <a href="/" class="nav-menu__link">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <h1 class="page-header__title-h1 title">
           Вязание на заказ
@@ -27,12 +53,12 @@
           
           <h3 class="page-form__title">Аксессуар для интерьера</h3>
           <label class="field">
-            <input class="field__radio" type="radio" checked name="property">
+            <input class="field__radio" type="radio" value="accessory" checked name="property">
             <span class='field__name'>Аксессуар для интерьера</span>
           </label>
           <label class="field__label">
-            <input class="field__radio" type="radio" name="property">
-            <span class='field__name'></span>
+            <input class="field__radio" type="radio" value="toy" name="property">
+            <span class='field__name'>Детская игрушка</span>
           </label>
           
           <h3 class="page-form__title">Цвет</h3>
@@ -77,12 +103,18 @@
           
           <h3 class="page-form__title">тел</h3>
           <label class="field">
-            <input type="tel" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}" class="field__tel"   required placeholder="+7 ХХХ ХХ ХХ*" name="phone">
+            <input type="tel" pattern="+[0-9]{1}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" class="field__tel"   required placeholder="+7 ХХХ ХХ ХХ*" name="phone">
+            <i class="field__icon  field__icon-phone">
+              <img src="http://placehold.it/25x25" alt="">
+            </i>
           </label>
           
           <h3 class="page-form__title">e-mail</h3>
           <label class="field">
             <input class="field__email" type="email" required placeholder="Ваш Email*" name="mail">
+            <i class="field__icon  field__icon-email">
+              <img src="http://placehold.it/25x25" alt="">
+            </i>
           </label>
           
           <h3 class="page-form__title">доп</h3>
