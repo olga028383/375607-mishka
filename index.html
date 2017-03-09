@@ -1,12 +1,250 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <title>Главная страница</title>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__top-line">
+          <div class="page-header__logo">
+            <img src="http://placehold.it/90x40" alt="">
+          </div>
+          <span class='page-header__button  js-button-menu'>
+            <img src="http://placehold.it/15x20" alt="">
+          </span>
+          <nav class="nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="/" class="nav-menu__link">Каталог товаров</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="/" class="nav-menu__link">Вязание на заказ</a>
+              </li>
+              <li class="nav-menu__item">
+                <label class="field">
+                  <i class="field__search-icon">
+                    <img src="http://placehold.it/25x25" alt="">
+                  </i>
+                  <input class="field__search" type="search" >
+                </label>
+              </li>
+              <li class="nav-menu__item">
+                <i class="nav-menu__icon">
+                  <img src="http://placehold.it/25x25" alt="">
+                </i>
+                <a href="/" class="nav-menu__link">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h1 class="page-header__title-h1 title">
+          Милые штуки ручной работы для дома
+        </h1>
+      </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <div class="nav-home">
+        <ul class="nav-home__list">
+          <li class="nav-home__item  nav-home__item--icon-room ">
+            <a href="/" class="nav-home__link">Предметы интерьера</a>
+          </li>
+          <li class="nav-home__item  nav-home__item--icon-room  nav-home__item--active">
+            <a href="/" class="nav-home__link">Детские игрушки</a>
+          </li>
+        </ul>
+      </div>
 
+      <section class="product-of-week">
+        <header class="product-of-week__header">
+          <h2 class="product-of-week__title title">Вязаные корзинки</h2>
+          <span class="product-of-week__subtitle">товар недели</span>
+        </header>
+        <section class="product-of-week__body">
+          <p class="product-of-week__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <dl class="products-prop">
+            <dt class="products-prop__name">Цвет:</dt>
+            <dd class="products-prop__description">"Тиффани"/серый</dd>
+            <dt class="products-prop__name">Диаметр:</dt>
+            <dd class="products-prop__description">25 см</dd>
+            <dt class="products-prop__name">Высота:</dt>
+            <dd class="products-prop__description">15см</dd>
+          </dl>
+          <div>
+            <figure class="images">
+              <img src="http://placehold.it/150x100" alt="">
+            </figure>
+            <strong class="product-of-week__price  price">Цена: 990 руб</strong>
+            <div class="product-of-week__wrap-btn">
+              <a href="/" class="product-of-week__btn btn">Заказать</a>
+            </div>
+        </section>
+      </section>
+
+      <section class="about-us">
+        <h2 class="about-us__title title">Коротко о нас</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <i class="about-us__icon">
+              <img src="http://placehold.it/50x45" alt="">
+            </i>
+            <span class="about-us__descroiption">Экологически 
+              чистые материалы</span>
+          </li>
+          <li class="about-us__item">
+            <i class="about-us__icon">
+              <img src="http://placehold.it/50x45" alt="">
+            </i>
+            <span class="about-us__descroiption">Скандинавский стиль 
+              по российской цене</span>
+          </li>
+          <li class="about-us__item">
+            <i class="about-us__icon">
+              <img src="http://placehold.it/50x45" alt="">
+            </i>
+            <span class="about-us__descroiption">Увеличивает лайки
+              на фотографиях</span>
+          </li>
+          <li class="about-us__item">
+            <i class="about-us__icon">
+              <img src="http://placehold.it/50x45" alt="">
+            </i>
+            <span class="about-us__descroiption">Связано вручную с 
+              любовью и умилением</span>
+          </li>
+          <li class="about-us__item">
+            <i class="about-us__icon">
+              <img src="http://placehold.it/50x45" alt="">
+            </i>
+            <span class="about-us__descroiption">Поддержка отечественного 
+              производителя</span>
+          </li>
+          <li class="about-us__item">
+            <i class="about-us__icon">
+              <img src="http://placehold.it/50x45" alt="">
+            </i>
+            <span class="about-us__descroiption">Поставляется в 
+              подарочной упаковке</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <header class="reviews__header">
+          <h2 class="reviews__title title">Отзывы</h2>
+        </header>
+        <div class="slider">
+          <ul class="reviews__list slider_list">
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <p class="reviews__text">
+                  Я молодая мама, но всё равно фотографии не набирали
+                  и близко такого количества лайков, как у популярных инстамамочек. 
+                  В отчаянии, я накупила аксессуаров и игрушек в Мишке, 
+                  и мои фотографии сразу стали более стильными,
+                  а также набирают больше лайков!
+                </p>
+                <cite class="reviews__cite">Анастасия Красильникова</cite>
+                <span class="reviews__contacts">@misssssiskras</span>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <p class="reviews__text">
+                  Я молодая мама, но всё равно фотографии не набирали
+                  и близко такого количества лайков, как у популярных инстамамочек. 
+                  В отчаянии, я накупила аксессуаров и игрушек в Мишке, 
+                  и мои фотографии сразу стали более стильными,
+                  а также набирают больше лайков!
+                </p>
+                <cite class="reviews__cite">Анастасия Красильникова</cite>
+                <span class="reviews__contacts">@misssssiskras</span>
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <p class="reviews__text">
+                  Я молодая мама, но всё равно фотографии не набирали
+                  и близко такого количества лайков, как у популярных инстамамочек. 
+                  В отчаянии, я накупила аксессуаров и игрушек в Мишке, 
+                  и мои фотографии сразу стали более стильными,
+                  а также набирают больше лайков!
+                </p>
+                <cite class="reviews__cite">Анастасия Красильникова</cite>
+                <span class="reviews__contact">@misssssiskras</span>
+              </blockquote>
+            </li>
+          </ul>
+          <a href="/" class="slider__btn slider__btn--left">стрелка влево</a>
+          <a href="/" class="slider__btn slider__btn--right">стрелка вправо</a>
+        </div>
+        <div class="reviews__wrap-btn">
+          <a href="/" class="reviews__btn btn">Написать</a>
+        </div>
+      </section>
+
+      <section class="contants">
+        <h3 class="contants__title title-h3">Конаткы</h3>
+        <ul class="contants__list">
+          <li class="contants__item field">
+            <span class="field__name">e-mail:</span>
+            <a href="/" class="field__description">info@mimimishkashop.ru</a>
+          </li>
+          <li class="contants__item field">
+            <span class="field__name">адрес:</span>
+            <address class="field__description">             
+              г. Санкт-Петербург,
+              ул. Большая Конюшенная, 
+              д. 19/8, офис 101
+            </address>
+          </li>
+        </ul>
+        <section class="map">
+          <img src="http://placehold.it/320x450" alt="">
+        </section>
+        <div class="contants__wrap-btn">
+          <a href="/" class="contants__btn btn">Напишите нам</a>
+        </div>
+      </section>
+
+      <div class="empty"></div>
+    </div>
+    <footer class="page-footer">
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a href="/" class="social__link">
+            <img src="http://placehold.it/40x40" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="/" class="social__link">
+            <img src="http://placehold.it/40x40" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="/" class="social__link">
+            <img src="http://placehold.it/40x40" alt="">
+          </a>
+        </li>
+      </ul>
+      <section class="page-footer__copyright">
+        <a href="/" class="page-footer__copyright-link">Разработано</a>
+      </section>
+    </footer>
+    <div class="popup-cart">
+      <span class="popup-cart__title">Добавить в корзину</span>
+      <p class="popup-cart__subtitle">Выберите размер:</p>
+      <ul class="popup-cart__list">
+        <li class="popup-cart__item">s</li>
+        <li class="popup-cart__item">m</li>
+        <li class="popup-cart__item">l</li>
+      </ul>
+      <div class="popup-cart__wrap-btn">
+        <a href="popup-cart__btn">добавить</a>
+      </div>
+    </div>
   </body>
 </html>

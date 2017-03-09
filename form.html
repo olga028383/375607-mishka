@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <title>Форма</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+     <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__top-line">
+          <div class="page-header__logo">
+            <img src="http://placehold.it/90x40" alt="">
+          </div>
+          <span class='page-header__button js-button-menu'>
+			<img src="http://placehold.it/15x20" alt="">
+		  </span>
+          <nav class="nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a href="/" class="nav-menu__link">Каталог товаров</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="/" class="nav-menu__link">Вязание на заказ</a>
+              </li>
+              <li class="nav-menu__item">
+                <label class="field">
+                  <i class="field__search-icon">
+                    <img src="http://placehold.it/25x25" alt="">
+                  </i>
+                  <input class="field__search" type="search" >
+                </label>
+              </li>
+              <li class="nav-menu__item">
+                <i class="nav-menu__icon">
+                  <img src="http://placehold.it/25x25" alt="">
+                </i>
+                <a href="/" class="nav-menu__link">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h1 class="page-header__title-h1 title">
+          Вязание на заказ
+        </h1>
+      </header>
+       
+      <section class="page-form">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          
+          <p>Мы будем рады воплотить в жизнь ваши пожелания!
+            Заполните простую форму заказа и мы свяжемся с вами,
+            чтобы уточнить детали.</p>
+          
+          <h2 class="page-form__title">Тип</h2>
+          <label class="field">
+            <input class="field__radio" type="radio" value="accessory" checked name="property">
+            <span class='field__name'>Аксессуар для интерьера</span>
+          </label>
+          <label class="field__label">
+            <input class="field__radio" type="radio" value="toy" name="property">
+            <span class='field__name'>Детская игрушка</span>
+          </label>
+          
+          <h2 class="page-form__title">Цвет</h2>
+          <label class="field">
+            <input class="field__checkbox" type="checkbox" checked name="color-white">
+            <span class='field__name'>Белый</span>
+          </label>
+          <label class="field">
+            <input class="field__checkbox" type="checkbox" checked name="color-gray">
+            <span class='field__name'>Серый</span>
+          </label>
+          <label class="field">
+            <input class="field__checkbox" type="checkbox" name="color-tiff">
+            <span class='field__name'>"Тиффани"</span>
+          </label>
+          <label class="field">
+            <input class="field__checkbox" type="checkbox" name="color-black">
+            <span class='field__name'>Черный</span>
+          </label>
+          <label class="field">
+            <input class="field__checkbox" type="checkbox" name="color-pink">
+            <span class='field__name'>Розовый</span>
+          </label>
+          <label class="field">
+            <input class="field__checkbox" type="checkbox" name="color-orange">
+            <span class='field__name'>Оранжевый</span>
+          </label>
+          
+          <h2 class="page-form__title">ФИО</h2>
+          <label class="field">
+            <span class='field__name'>Имя:</span>
+            <input class="field__text" type="text" required placeholder="Введите ваше имя*" name="name">
+          </label>
+          <label class="field">
+            <span class='field__name'>Фамилия:</span>
+            <input class="field__text" type="text" required placeholder="Укажите фамилию*" name="surname">
+          </label>
+          <label class="field">
+            <span class='field__name'>Отчество</span>
+            <input class="field__text" type="text" placeholder="Отчество, если желаете" name="patronymic">
+          </label>
+          
+          <h2 class="page-form__title">тел</h2>
+          <label class="field">
+            <input type="tel" pattern="+[0-9]{1}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" class="field__tel"   required placeholder="+7 ХХХ ХХ ХХ*" name="phone">
+            <i class="field__icon  field__icon-phone">
+              <img src="http://placehold.it/25x25" alt="">
+            </i>
+          </label>
+          
+          <h2 class="page-form__title">e-mail</h2>
+          <label class="field">
+            <input class="field__email" type="email" required placeholder="Ваш Email*" name="mail">
+            <i class="field__icon  field__icon-email">
+              <img src="http://placehold.it/25x25" alt="">
+            </i>
+          </label>
+          
+          <h2 class="page-form__title">доп</h2>
+          <label class="field">
+            <textarea class="field__textarea" placeholder="Опишите все ваши пожелания к заказу" name="text"></textarea>
+          </label>
+          
+          <p>*Поля обязательны для заполнения</p>
+          <div class="page-form__wrap-btn">
+            <input type="submit" value="ОТПРАВИТЬ ЗАКАЗ" class="page-form__btn  btn">
+          </div>
+        </form>
+      </section>
+       
+      <div class="empty"></div>
+    </div>
+    <footer class="page-footer">
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a href="/" class="social__link">
+            <img src="http://placehold.it/40x40" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="/" class="social__link">
+            <img src="http://placehold.it/40x40" alt="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="/" class="social__link">
+            <img src="http://placehold.it/40x40" alt="">
+          </a>
+        </li>
+      </ul>
+      <section class="page-footer__copyright">
+        <a href="/" class="page-footer__copyright-link">Разработано</a>
+        <i class='page-footer__icon'>
+          <img src="http://placehold.it/40x40" alt="">
+        </i>
+      </section>
+    </footer>
+  </body>
+</html>
