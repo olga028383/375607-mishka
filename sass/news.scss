@@ -1,0 +1,40 @@
+.news{
+  margin-bottom: 58px;
+}
+.news__title{
+  font: 17px/1.5 'Opensansbold', sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+}
+.news__title-wrap{
+  padding: 28px 28px;
+  @include clearfix();
+  display: table;
+  border: 1px solid #ececec;
+}
+.news__title-icon{
+  display: table-cell;
+  width: 58px;
+  vertical-align: middle;
+}
+.news__title-icon path{
+  fill: #63d1bb;
+}
+.news__video{
+  position: relative;
+}
+.news__play{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  margin-top: -34px;
+  margin-left: -50px;
+}
+.news__description-wrap{
+  padding: 32px;
+  border: 1px solid #ececec;
+  border-top: 0;
+}
+.news__description{
+  margin-bottom: 32px;
+}
