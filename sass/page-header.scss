@@ -1,0 +1,50 @@
+.page-header__top-line{
+  position: relative;
+  padding: 22px 0 18px;
+}
+.page-header__logo{
+  width: 88px;
+  height:40px;
+  margin: 0 auto;
+}
+.page-header__button{
+  position: absolute;
+  right: 1px;
+  top: 28px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.page-header__title-h1{
+  padding-top:71px;
+  padding-bottom: 124px;
+  background: url(../img/hero-mobile@1x.jpg) no-repeat center center;
+  background-size: cover;
+  line-height: 1.1;
+  text-align:center;
+}
+.page-header__button-icon{
+  display: block;
+  width: 20px;
+  height: 2px;
+  background:#221f1f;
+  position: relative;
+  margin-top: 12px;
+}
+.page-header__button-icon:before,
+.page-header__button-icon:after{
+  content:'';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background:#221f1f;
+}
+.page-header__button-icon:before{
+  top: -6px;
+}
+.page-header__button-icon:after{
+  bottom: -6px;
+}
