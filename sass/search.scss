@@ -1,0 +1,24 @@
+.search{
+  position: relative;
+  display: block;
+}
+.search__field{
+  border:none;
+  width: 100%;
+  height: 78px;
+  padding-left: 45px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.search__icon{
+  position: absolute;
+  top: 0px;
+  bottom:0;
+  height: 20px;
+  margin: auto;
+  left:0;
+}
+.search__icon path{
+  fill: #d3d2d2;
+}
+
