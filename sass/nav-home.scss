@@ -1,0 +1,27 @@
+
+.nav-home__item{
+   background: #63d1bb;
+}
+.nav-home__link{
+  font: bold 19px/1.4 "Opensansbold", sans-serif;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 24px 60px 27px 0;
+  position: relative;
+}
+.nav-home__item:hover{
+  background:#56c3b2;
+}
+.nav-home__link path{
+  fill: #3bb09d;
+}
+.nav-home__icon{
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right:0;
+  display: block;
+  height: 68px;
+  margin: auto;
+}
