@@ -1,0 +1,5 @@
+.btn{
+	@include btn_link(17px, Opensansbold, 48px, transparent, #444);
+	border: 2px solid #444;
+    
+}
