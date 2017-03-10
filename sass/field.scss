@@ -1,0 +1,108 @@
+.page-form{
+  margin-bottom: 52px;
+}
+.field{
+  display:table;
+  margin-bottom: 12px;
+  width: 100%;
+  position: relative;
+}
+.field__name{
+  font: 17px/1 'Opensansbold', sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align:middle;
+  display: table-cell;
+  padding-left: 20px;
+}
+.field__radio,.field__checkbox{
+  display: none;
+}
+.field__radio-dezign{
+  display: table-cell;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #444;
+  vertical-align:top;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  cursor:pointer;
+}
+.field__radio:checked + .field__radio-dezign:before{
+  content:'';
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  background: #62d1ba;
+  left:50%;
+  margin-left:-8px;
+  height: 16px;
+  width: 16px;
+  border-radius:50%;
+}
+
+.field__checkbox-dezign{
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444;
+  vertical-align:top;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  cursor:pointer;
+}
+.field__checkbox:checked + .field__checkbox-dezign:before{
+  content:'';
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  background: transparent;
+  left:50%;
+  margin-left:-9px;
+  height: 8px;
+  width: 18px;
+  border-bottom: 2px solid #444;
+  border-left: 2px solid #444;
+  transform:rotate(-45deg)
+}
+.field__name-full{
+  display:block;
+  font: 17px/1 'Opensansbold', sans-serif;
+}
+.field__text,.field__tel,.field__email{
+  border: none;
+  border-bottom: 2px solid #444;
+  height: 52px;
+  width: 100%;
+  font-size: 17px;
+  margin-bottom: 22px;
+  font-family: 'Opensans', sans-serif;
+}
+.field__tel,.field__email{
+  padding-right: 40px;
+}
+.field__icon {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.field__icon path{
+  fill: #cccccc;
+}
+.field__textarea{
+  width: 100%;
+  height: 142px;
+  padding: 16px;
+  border: 2px solid #444;
+  box-sizing: border-box;
+  font: 17px/1 'Opensans', sans-serif;
+}
+.page-form__footnote{
+  font-size: 14px;
+  display: block;
+  margin-bottom: 28px;
+}
