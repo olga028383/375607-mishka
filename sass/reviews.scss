@@ -1,0 +1,40 @@
+.reviews{
+  padding-bottom:52px;
+  margin-bottom: 36px;
+}
+.reviews__list{
+  margin-bottom: 34px;
+}
+.reviews__title{
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+.reviews__text{
+  margin-bottom: 34px;
+}
+.reviews__cite{
+  font: 18px/1.5 "Opensansbold", sans-serif;
+  margin-bottom: 8px;
+  display: block;
+}
+.reviews__contacts{
+  font-size: 17px;
+}
+.slider__arrow-wrap{
+  @include clearfix();
+  margin-bottom: 38px;
+}
+.slider__btn{
+  width: 50%;
+  display: block;
+  border: 1px solid #ececec;
+  height: 50px;
+  box-sizing: border-box;
+}
+.slider__btn--left{
+  float:left;
+  border-right-color: transparent
+}
+.slider__btn--right{
+  float:right;
+}
