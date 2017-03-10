@@ -1,0 +1,37 @@
+.product__title{
+  font: 17px/1.2 'Opensansbold', sans-serif;
+  color: #000;
+  margin-bottom: 16px;
+}
+.product__description{
+  display: block;
+  margin: 28px 28px 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #ececec;
+  text-decoration: none;
+}
+.product__prop-text{
+  display: block;
+  color: #444;
+}
+.product__footer{
+  @include clearfix();
+  padding: 0 28px 28px;
+}
+.product__price{
+  float: left;
+  font-size: 15px;
+}
+.product__icon-add-cart{
+  display: block;
+  float: right;
+}
+.catalog__item{
+  margin-bottom: 30px;
+}
+.product__description-wrap{
+  border: 1px solid #ececec;
+}
+.product__icon-add-cart path{
+  fill: #ccc;
+}
