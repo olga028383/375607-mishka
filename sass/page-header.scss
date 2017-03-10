@@ -1,6 +1,11 @@
+
+.page-header__wrap-title{
+  background:#f9f9f9;
+}
 .page-header__top-line{
   position: relative;
   padding: 22px 0 18px;
+  border-bottom:1px solid #ececec;
 }
 .page-header__logo{
   width: 88px;
@@ -20,10 +25,12 @@
 .page-header__title-h1{
   padding-top:71px;
   padding-bottom: 124px;
-  background: url(../img/hero-mobile@1x.jpg) no-repeat center center;
-  background-size: cover;
   line-height: 1.1;
   text-align:center;
+}
+.page-header__title-h1--home{
+  background: url(../img/hero-mobile@1x.jpg) no-repeat top center;
+  background-size: auto 300px;
 }
 .page-header__button-icon{
   display: block;
