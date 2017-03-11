@@ -1,9 +1,37 @@
+@import "mixin.scss";
 @import "reset.scss";
+@import "container.scss";
+@import "clearfix.scss";
 @import "fonts.scss";
 @import "page.scss";
 @import "title.scss";
+@import "wrapper.scss";
+@import "btn.scss";
+@import "title-h3.scss";
+
 @import "page-header.scss";
 @import "nav-menu.scss";
 @import "search.scss";
 
 @import "nav-home.scss";
+
+@import "product-of-week.scss";
+@import "product-prop.scss";
+@import "images.scss";
+@import "price.scss";
+
+@import "about-us.scss";
+@import "reviews.scss";
+@import "slider.scss";
+@import "contacts.scss";
+@import "map.scss";
+
+@import "catalog.scss";
+@import "product.scss";
+@import "news.scss";
+@import "page-form.scss";
+@import "field.scss";
+
+@import "page-footer.scss";
+@import "social.scss";
+@import "popup-cart.scss";
