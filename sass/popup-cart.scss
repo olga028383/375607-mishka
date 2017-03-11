@@ -33,6 +33,14 @@
   margin-left: 8px;
   box-sizing: border-box;
   margin-bottom: 8px;
+  @include transition(.2s);
+  cursor:pointer;
+}
+.popup-cart__item:hover{
+  border-color:#c7c7c7;
+}
+.popup-cart__item:active{
+  border-color: #62d1ba;
 }
 .popup-cart__item:first-child{
   margin-left: 0;
