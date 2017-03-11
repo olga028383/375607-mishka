@@ -1,18 +1,20 @@
 .product__title{
-  font: 17px/1.2 'Opensansbold', sans-serif;
+  font: 17px/1.5 'Opensansbold', sans-serif;
   color: #000;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+  @include transition(.2s);
 }
 .product__description{
   display: block;
-  margin: 28px 28px 24px;
-  padding-bottom: 28px;
+  margin: 26px 28px 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
   text-decoration: none;
 }
 .product__prop-text{
   display: block;
   color: #444;
+  font-size: 13px;
 }
 .product__footer{
   @include clearfix();
@@ -20,18 +22,24 @@
 }
 .product__price{
   float: left;
-  font-size: 15px;
+  font-size: 16px;
 }
 .product__icon-add-cart{
   display: block;
   float: right;
 }
-.catalog__item{
-  margin-bottom: 30px;
-}
+
 .product__description-wrap{
   border: 1px solid #ececec;
+  @include transition(.2s);
 }
 .product__icon-add-cart path{
   fill: #ccc;
+  @include transition(.2s);
+}
+.product__icon-add-cart:hover path{
+  fill: #63d1bb;
+}
+.product__icon-add-cart:active{
+  opacity: .5;
 }
