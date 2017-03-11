@@ -1,5 +1,5 @@
 .nav-menu{
-  display: none;
+  //display: none;
 }
 .nav-menu__item{
   border-top: 1px solid #d3d2d2;
@@ -29,4 +29,11 @@
 }
 .nav-menu__icon path{
   fill:#d3d2d2;
+  @include transition(.2s);
+}
+.nav-menu__link:hover path{
+  fill: #63d1bb;
+}
+.nav-menu__link:active path{
+  opacity:.5;
 }
