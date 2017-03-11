@@ -2,13 +2,21 @@
   font-size:0;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 20px;
+  padding-bottom:8px;
 }
 .social__item{
   display: inline-block;
   vertical-align: middle;
-  margin: 0  18px 18px 18px;
+  margin: 0  17px 18px 17px;
   width: 24px;
 }
 .social__link{
   display: block;
+  @include transition(.2s);
+}
+.social__link:hover path{
+  fill:#62d1ba;
+}
+.social__link:active{
+  opacity: .7;
 }
