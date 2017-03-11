@@ -1,12 +1,14 @@
 .page-form__info{
-  padding: 28px 0;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 24px;
 }
 .page-form__title{
   font-size: 17px;
   color: #63d1bb;
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   position: relative;
 }
 .page-form__title:after{
@@ -32,5 +34,17 @@
   line-height: 44px;
 }
 .page-form__wrap-field{
+  margin-bottom: 20px;
+}
+.page-form__wrap-field-full{
+  margin-bottom: 26px;
+}
+.page-form__footnote{
+  font-size: 14px;
+  display: block;
   margin-bottom: 28px;
+  line-height: 1.4;
+}
+.page-form__title--margin{
+  margin-bottom: 8px;
 }
