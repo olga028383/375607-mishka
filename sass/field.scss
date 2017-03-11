@@ -2,34 +2,42 @@
   margin-bottom: 52px;
 }
 .field{
-  display:table;
-  margin-bottom: 12px;
+  display: block;
+  margin-bottom: 13px;
   width: 100%;
   position: relative;
+  min-height: 48px;
 }
 .field__name{
   font: 17px/1 'Opensansbold', sans-serif;
   position: relative;
-  display: inline-block;
+  display: block;
+  padding-left: 24px;
   overflow: hidden;
-  vertical-align:middle;
-  display: table-cell;
-  padding-left: 20px;
+  padding-top: 10px;
 }
 .field__radio,.field__checkbox{
   display: none;
 }
 .field__radio-dezign{
-  display: table-cell;
+  display: block;
   width: 38px;
   height: 38px;
   border-radius: 50%;
   border: 2px solid #444;
-  vertical-align:top;
+  vertical-align: top;
   position: relative;
   text-align: center;
   box-sizing: border-box;
-  cursor:pointer;
+  cursor: pointer;
+  float: left;
+  @include transition(.2s);
+}
+.field__radio-dezign:hover{
+  border-color: #62d1ba;
+}
+.field__radio-dezign:active{
+  border-color: #e7e7e7;
 }
 .field__radio:checked + .field__radio-dezign:before{
   content:'';
@@ -45,15 +53,22 @@
 }
 
 .field__checkbox-dezign{
-  display: table-cell;
+  display: block;
   width: 40px;
   height: 40px;
   border: 2px solid #444;
-  vertical-align:top;
+  float:left;
   position: relative;
   text-align: center;
   box-sizing: border-box;
   cursor:pointer;
+  @include transition(.2s);
+}
+.field__checkbox-dezign:hover{
+  border-color: #62d1ba;
+}
+.field__checkbox-dezign:active{
+  border-color: #e7e7e7;
 }
 .field__checkbox:checked + .field__checkbox-dezign:before{
   content:'';
@@ -72,6 +87,7 @@
 .field__name-full{
   display:block;
   font: 17px/1 'Opensansbold', sans-serif;
+  padding-top: 4px;
 }
 .field__text,.field__tel,.field__email{
   border: none;
@@ -79,9 +95,45 @@
   height: 52px;
   width: 100%;
   font-size: 17px;
-  margin-bottom: 22px;
+  margin-bottom: 6px;
   font-family: 'Opensans', sans-serif;
+  @include transition(.2);
 }
+.field__textarea{
+  width: 100%;
+  height: 142px;
+  padding: 16px;
+  border: 2px solid #444;
+  box-sizing: border-box;
+  font: 17px/1 'Opensans', sans-serif;
+    @include transition(.2);
+}
+.field__text:hover,
+.field__tel:hover,
+.field__email:hover,
+.field__textarea:hover,
+.field__text:focus,
+.field__tel:focus,
+.field__email:focus,
+.field__textarea:focus,
+field__text:valid,
+.field__tel:valid,
+.field__email:valid,
+.field__textarea:valid,
+.field__text:active,
+.field__tel:active,
+.field__email:active,
+.field__textarea:active{
+  border-color: #62d1ba;
+  background-color: #fff;
+}
+.field__tel:hover ~ .field__icon path,.field__email:hover ~ .field__icon path,
+.field__tel:focus ~ .field__icon path,.field__email:focus ~ .field__icon path,
+.field__tel:valid ~ .field__icon path,.field__email:valid ~ .field__icon path,
+.field__tel:active ~ .field__icon path,.field__email:active ~ .field__icon path{
+    fill: #62d1ba;
+}
+
 .field__tel,.field__email{
   padding-right: 40px;
 }
@@ -93,16 +145,11 @@
 .field__icon path{
   fill: #cccccc;
 }
-.field__textarea{
-  width: 100%;
-  height: 142px;
-  padding: 16px;
-  border: 2px solid #444;
-  box-sizing: border-box;
-  font: 17px/1 'Opensans', sans-serif;
+
+
+.field__tel{
+  margin-bottom: 18px;
 }
-.page-form__footnote{
-  font-size: 14px;
-  display: block;
-  margin-bottom: 28px;
+.field__email{
+  margin-bottom: 16px;
 }
