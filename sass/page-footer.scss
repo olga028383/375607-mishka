@@ -1,7 +1,7 @@
 .page-footer{
   @include clearfix();
   background: #f1f1f1;
-  padding-top: 22px;
+  padding-top: 26px;
   padding-bottom: 22px;
 }
 .page-footer__social{
@@ -11,11 +11,19 @@
   text-align: center;
 }
 .page-footer__copyright-link{
+  display: block;
+  text-decoration: none;
+  @include transition(.2s);
+}
+.page-footer__copyright-text{
   display: inline-block;
   color: #000;
   font: 19px/1 'Opensansbold', sans-serif;
   text-decoration: none;
   margin-right: 26px;
+}
+.page-footer__copyright-link:active{
+  opacity: .4;
 }
 .page-footer__icon{
   display: inline-block;
