@@ -11,10 +11,18 @@
   width: 88px;
   height:40px;
   margin: 0 auto;
+  display: block;
+  @include transition(.2s);
+}
+.page-header__logo:hover path{
+  fill:#666;
+}
+.page-header__logo:active path{
+  fill:#b2b2b2;
 }
 .page-header__button{
   position: absolute;
-  right: 1px;
+  right: 32px;
   top: 28px;
   display: block;
   width: 20px;
@@ -24,13 +32,16 @@
 
 .page-header__title-h1{
   padding-top:71px;
-  padding-bottom: 124px;
+  padding-bottom: 74px;
   line-height: 1.1;
   text-align:center;
+  margin-bottom: 30px
 }
 .page-header__title-h1--home{
   background: url(../img/hero-mobile@1x.jpg) no-repeat top center;
   background-size: auto 300px;
+  padding-bottom: 124px;
+  margin-bottom: 0;
 }
 .page-header__button-icon{
   display: block;
