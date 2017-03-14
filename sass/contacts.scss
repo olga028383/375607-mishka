@@ -1,0 +1,33 @@
+.contants__list{
+  margin-bottom: 42px;
+}
+.contants__item {
+  margin-bottom: 26px;
+}
+.contants__item-name{
+  float: left;
+  width:70px;
+  margin-right:8px;
+}
+.contants__item-description{
+  overflow: hidden;
+  font-style: normal;
+  line-height: 1.9;
+}
+.contants__item-description--mail{
+  display: inline-block;
+  border-bottom: 1px solid #63d1bb;
+  text-decoration: none;
+  color:#444;
+  line-height: 1.8;
+  @include transition(.2s);
+}
+.contants__item-description--mail:hover{
+  color:#63d1bb;
+}
+.contants__item-description--mail:active{
+  opacity:.5;
+}
+.contants__wrap-btn{
+  margin-bottom: 40px;
+}

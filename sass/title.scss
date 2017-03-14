@@ -1,0 +1,16 @@
+.title{
+  font: 27px/1.4 'Opensansbold', sans-serif;
+  color:#231f20;
+}
+.title__link{
+  color: #000;
+  @include transition(.2s);
+  text-decoration: none;
+  display: block;
+}
+.title__link:hover{
+  color: rgba(0,0,0,.6);
+}
+.title__link:active{
+  color: rgba(0,0,0,.2);
+}
