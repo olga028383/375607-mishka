@@ -43,3 +43,40 @@
 .product__icon-add-cart:active{
   opacity: .5;
 }
+.product__img img{
+    width: 100%;
+  }
+@include interval(768px, 1150px){
+  .product__img{
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+  }
+  .product__description{
+     border: none;
+  }
+  .product__description-wrap{
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    padding-bottom: 80px;
+    position: relative;
+   
+  }
+  .product__footer{
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    bottom: 0;
+    padding-left:0;
+    padding-right:0;
+    padding-top:28px;
+    border-top: 1px solid #ececec;
+  }
+}
+@include adaptive(pc){
+  .product__description{
+    height: 80px;
+    overflow: hidden;
+  }
+}
