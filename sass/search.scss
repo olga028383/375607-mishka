@@ -29,3 +29,8 @@
 .search__icon:active path{
   opacity:.5;
 }
+@include adaptive(tablet){
+  .search__field{
+    display: none;
+  }
+}
