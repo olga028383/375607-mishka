@@ -1,6 +1,11 @@
 .about-us{
   padding-top: 25px;
   margin-bottom: 56px;
+  font-size:0;
+}
+.about-us .container{
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .about-us__title{
   font-size: 25px;
@@ -19,4 +24,37 @@
 }
 .about-us__icon path{
   fill: #63d1bb;
+}
+@include adaptive(tablet){
+  .about-us__list{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+  .about-us__title{
+    font-size: 43px;
+  }
+  
+  .about-us .container{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about-us__description{
+    width: 300px;
+  }
+}
+@include adaptive(pc){
+  .about-us .container{
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+  .about-us__list{
+    padding-right: 10%;
+  }
+ 
+  .about-us__title{
+    font-size: 53px;
+    
+  }
 }
