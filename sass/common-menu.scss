@@ -1,0 +1,23 @@
+.сommon-menu{
+  display: none;
+  font-size:0;
+}
+@include adaptive(pc){
+  .сommon-menu{
+    display: block;
+    margin-left: 50px;
+    float:left;
+    max-width: 850px;
+  }
+  .сommon-menu__item{
+    display: inline-block;
+  }
+  .сommon-menu__link{
+    display: block;
+    font: bold 16px/1 'Opensansbold',sans-serif;
+    color: #231f20;
+    padding: 30px 50px 0 0;
+    text-decoration: none;
+  }
+  
+}
