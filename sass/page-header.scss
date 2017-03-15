@@ -5,7 +5,7 @@
 .page-header__top-line{
   position: relative;
   padding: 22px 0 18px;
-  border-bottom:1px solid #ececec;
+  border-bottom:1px solid #d3d2d2;
 }
 .page-header__logo{
   width: 88px;
@@ -20,16 +20,6 @@
 .page-header__logo:active path{
   fill:#b2b2b2;
 }
-.page-header__button{
-  position: absolute;
-  right: 32px;
-  top: 28px;
-  display: block;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
 .page-header__title-h1{
   padding-top:71px;
   padding-bottom: 74px;
@@ -43,26 +33,36 @@
   padding-bottom: 124px;
   margin-bottom: 0;
 }
-.page-header__button-icon{
-  display: block;
-  width: 20px;
-  height: 2px;
-  background:#221f1f;
-  position: relative;
-  margin-top: 12px;
+@include interval(768px,1150px){
+  .page-header__top-line{
+    @include clearfix();
+  }
+  .page-header__logo{
+    float:left;
+    margin-left: 50px;
+  }
+  .page-header__title-h1{
+    margin-bottom: 60px;
+  }
 }
-.page-header__button-icon:before,
-.page-header__button-icon:after{
-  content:'';
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 2px;
-  background:#221f1f;
+@include adaptive(tablet){
+  .page-header__title-h1{
+    padding-top: 30px;
+  }
 }
-.page-header__button-icon:before{
-  top: -6px;
-}
-.page-header__button-icon:after{
-  bottom: -6px;
+@include adaptive(pc){
+  .page-header__top-line{
+    height: 80px;
+    overflow: hidden;
+    padding:0;
+  }
+  .page-header__logo{
+    margin-top: 20px;
+  }
+  .page-header__title-h1{
+    margin-bottom: 60px;
+  }
+  .page-header__title-h1--home{
+    margin-bottom: 0;
+  }
 }
