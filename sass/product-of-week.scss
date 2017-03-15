@@ -27,3 +27,92 @@
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
+.product-of-week .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+@include adaptive(tablet){
+  .product-of-week .container{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .product-of-week{
+   
+  }
+  .product-of-week__body{
+     width: 50%;
+     position: relative;
+     padding-right: 50px;
+    box-sizing: border-box;
+  }
+  .product-of-week__images{
+    position: absolute;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    background: #f1f1f1 url(../../img/triple-set-mobile@1x.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
+  .product-of-week__images img{
+    display: none;
+  }
+  .product-of-week__header{
+    @include clearfix;
+    height:90px;
+    overflow: hidden;
+  }
+  .product-of-week__subtitle{
+    width: 100px;
+    text-align: center;
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 12px;
+  }
+}
+@include interval(768px, 1150px){
+  .product-of-week{
+    padding-top: 60px;
+  }
+  .product-of-week__title{
+    float: left;
+    line-height: 1;
+    font-size: 43px;
+    max-width: 560px;
+  }
+  .product-of-week__subtitle{
+    float: right;
+  }
+  
+}
+@include adaptive(pc){
+  .product-of-week{
+    padding-top: 75px;
+  }
+  .product-of-week__header{
+    height: 160px;
+    padding-left: 175px;
+    position: relative;
+    z-index: 1;
+  }
+  .product-of-week__subtitle{
+    position: absolute;
+    top: 55px;
+    left: 35px;
+    width: 105px;
+    font-size: 17px;
+    max-width: 100%;
+  }
+  .product-of-week__title{
+    font-size: 53px;
+    line-height: 1.2;
+    margin-top: 50px;
+  }
+  .product-of-week__images{
+    top: -160px;
+  }
+  .product-of-week__body{
+    padding-left: 175px;
+  }
+}
