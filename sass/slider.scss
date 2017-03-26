@@ -1,6 +1,7 @@
 .slider__arrow-wrap{
   @include clearfix();
   margin-bottom: 40px;
+  display: flex;
 }
 .slider__btn{
   width: 50%;
@@ -10,11 +11,7 @@
   box-sizing: border-box;
 }
 .slider__btn--left{
-  float:left;
   border-right-color: transparent
-}
-.slider__btn--right{
-  float:right;
 }
 .slider__arrow{
   display: block;
@@ -39,7 +36,7 @@
     width: 175px;
     position: absolute;
     right: 50px;
-    bottom: 90px;
+    bottom: 84px;
     margin-bottom: 0;
   }
   .slider__btn{
