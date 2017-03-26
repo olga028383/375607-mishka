@@ -82,7 +82,7 @@ $scale:1)
 
 @mixin adaptive($media){
   @if $media == pc{
-    @media screen and (min-width: 1150px){@content}
+    @media screen and (min-width: 1151px){@content}
   }
   @else if $media == tablet{
     @media screen and (min-width: 768px){@content}
@@ -100,7 +100,6 @@ $scale:1)
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
-  overflow: hidden;
   
   @include adaptive(tablet){
     padding-left:50px;
