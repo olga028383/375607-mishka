@@ -22,11 +22,9 @@
 }
 @include adaptive(tablet){
   .social {
-      border-bottom: none;
-      position: absolute;
-      left: 0;
-      right: 0;
-      padding-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .social__item{
     margin-top: 8px;
