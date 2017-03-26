@@ -7,13 +7,15 @@
   font-size: 0;
 }
 .contacts__item {
-  margin-bottom: 26px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: start;
 }
 .contacts__item-name{
-  float: left;
   width:70px;
   margin-right:8px;
   font-size: 15px;
+  flex-shrink: 0;
 }
 .contacts__item-description{
   overflow: hidden;
@@ -40,9 +42,9 @@
   margin-bottom: 40px;
 }
 .contacts .container{
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+  padding-left: 30px;
+  padding-right: 30px;
+}
 @include adaptive(tablet){
   .contacts .container{
     padding-left: 50px;
@@ -50,15 +52,47 @@
   }
   .contacts__title{
     font-size: 43px;
-    padding: 17px 0 20px;
-    border-right: 5px solid #221f1f;
-    margin-right: 46px;
-    margin-bottom: 46px;
+    padding: 14px 0 15px;
+    border-right: 4px solid #221f1f;
+    margin-right: 40px;
+    margin-bottom: 35px;
+    position: relative;
+  }
+  .contacts__title:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 20px solid #63d1bb;
+    left: 100%;
+    margin-left: 8px;
+    top: 2px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: none;
+    border-left-width: 40px;
+
+  }
+  .contacts__item-name{
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .contacts__item-description{
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .contacts__list{
+    margin-bottom: 22px;
+  }
+  .contacts{
+    margin-bottom: 56px;
   }
 }
 @include interval(768px, 1150px){
+  .contacts__list{
+    display: flex;
+  }
   .contacts__item {
-    display: inline-block;
     width: 50%;
     vertical-align: top;
   }
@@ -77,9 +111,10 @@
     box-sizing: border-box;
   }
   .contacts__list{
-    width: 50%;
+    width: 42%;
     padding-left: 160px;
     box-sizing: border-box;
+    margin-bottom: 78px;
   }
   .contacts .container{
     padding-left: 65px;
@@ -90,5 +125,19 @@
   }
   .contacts{
     padding-top: 60px;
+    margin-bottom: 106px;
+  }
+  .contacts__title::after{
+    left: -5px;
+  }
+  .contacts__title {
+    border-right: none;
+    border-left: 4px solid #221f1f;
+    margin-left: 48px;
+    padding: 8px 0 14px 102px;
+    margin-bottom: 30px;
+  }
+  .contacts__item {
+    margin-bottom: 28px;
   }
 }
