@@ -14,3 +14,13 @@
 .title__link:active{
   color: rgba(0,0,0,.2);
 }
+@include adaptive(tablet){
+  .title{
+  font-size: 43px;
+  }
+}
+@include adaptive(pc){
+  .title{
+  font-size: 53px;
+  }
+}

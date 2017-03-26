@@ -1,39 +1,104 @@
-.nav-menu{
-  //display: none;
-}
+
 .nav-menu__item{
-  border-top: 1px solid #d3d2d2;
-  border-bottom: 1px solid #d3d2d2;
-  margin-top:-1px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .nav-menu__link{
   display: block;
   font: bold 17px/1 'Opensansbold',sans-serif;
   color:#231f20;
-  padding: 30px 0 30px 45px;
+  padding: 30px 0 30px 50px;
   text-decoration: none;
   position: relative;
 }
 
-.nav-menu__icon{
+.nav-menu__button{
   position: absolute;
-  left: 0;
-  top:0;
-  bottom:0;
-  margin: auto;
+  right: 32px;
+  top: -54px;
+  display: block;
+  width: 20px;
   height: 20px;
-  display:block;
+  cursor: pointer;
 }
-.nav-menu__icon svg{
-  width: 100%
+
+.nav-menu__button-icon{
+  display: block;
+  width: 20px;
+  height: 2px;
+  background:#221f1f;
+  position: relative;
+  margin-top: 12px;
 }
-.nav-menu__icon path{
-  fill:#d3d2d2;
-  @include transition(.2s);
+.nav-menu__button-icon:before,
+.nav-menu__button-icon:after{
+  content:'';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background:#221f1f;
 }
-.nav-menu__link:hover path{
-  fill: #63d1bb;
+.nav-menu__button-icon:before{
+  top: -6px;
 }
-.nav-menu__link:active path{
-  opacity:.5;
+.nav-menu__button-icon:after{
+  bottom: -6px;
+}
+@include interval(0, 768px){
+  .nav-menu__item{
+    border-bottom: 1px solid #d3d2d2;
+  }
+}
+@include interval(768px, 1150px){
+  .nav-menu__list{
+    float: left;
+  }
+}
+@include adaptive(tablet){
+  .nav-menu{
+    background: #f9f9f9;
+    @include clearfix;
+  }
+  .nav-menu__button{
+    display: none;
+  }
+  .nav-menu__item{
+    border-bottom: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
+@include adaptive(pc){
+  .nav-menu__list{
+    position: absolute;
+    left:50px;
+    top: -80px;
+    height: 80px;
+    overflow: hidden;
+    font-size:0;
+  }
+  .nav-menu__link{
+    padding-left: 0;
+    padding-right: 50px
+  }
+  .nav-menu__item{
+    width: 230px;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+  }
+  .nav-menu__item:first-child:after{
+    content:'';
+    position: absolute;
+    right: 40px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #d3d2d2
+  }
+  
 }

@@ -34,3 +34,15 @@
 .slider__btn:active .slider__arrow{
   opacity:.3;
 }
+@include adaptive(tablet){
+  .slider__arrow-wrap{
+    width: 175px;
+    position: absolute;
+    right: 50px;
+    bottom: 90px;
+    margin-bottom: 0;
+  }
+  .slider__btn{
+    border:none;
+  }
+}

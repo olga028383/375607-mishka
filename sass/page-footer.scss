@@ -1,8 +1,13 @@
 .page-footer{
-  @include clearfix();
   background: #f1f1f1;
   padding-top: 26px;
   padding-bottom: 22px;
+  position: relative;
+}
+.page-footer .container{
+  padding-left: 30px;
+  padding-right: 30px;
+  @include clearfix();
 }
 .page-footer__social{
   text-align: center;
@@ -31,4 +36,30 @@
 }
 .page-footer__icon path{
   fill: #63d1bb;
+}
+.page-footer__logo{
+  display: none;
+}
+@include adaptive(tablet){
+  .page-footer__logo{
+    display: block;
+    float:left;
+    width: 100px;
+  }
+  .page-footer__logo svg{
+    width: 100%;
+  }
+  .page-footer__copyright{
+    float: right;
+
+  }
+  .page-footer .container{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@include adaptive(pc){
+  .page-footer .container{
+    padding-left: 0;
+  }
 }
