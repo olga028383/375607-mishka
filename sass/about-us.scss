@@ -13,27 +13,33 @@
 }
 .about-us__icon{
   display: block;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
     width: 48px;
     text-align: center;
+  height: 35px;
 }
 .about-us__description{
   display: block;
-  font: 17px/1.2 'Opensansbold', sans-serif;
-  margin-bottom: 34px;
+  font: 17px/1.2 'Opensansbold', 'Arial',sans-serif;
+  margin-bottom: 30px;
 }
 .about-us__icon path{
   fill: #63d1bb;
 }
 @include adaptive(tablet){
-  .about-us__list{
-    display: inline-block;
+  .about-us{
+    margin-bottom: 25px;
+  }
+  .about-us__item{
     width: 50%;
-    box-sizing: border-box;
-    vertical-align: top;
+  }
+  .about-us__list{
+    display: flex;
+    flex-wrap: wrap;
   }
   .about-us__title{
     font-size: 43px;
+    margin-bottom: 44px;
   }
   
   .about-us .container{
@@ -42,19 +48,21 @@
   }
   .about-us__description{
     width: 300px;
+    font-size: 19px;
+    margin-bottom: 58px;
   }
 }
 @include adaptive(pc){
   .about-us .container{
     padding-left: 225px;
     padding-right: 225px;
+
   }
-  .about-us__list{
-    padding-right: 10%;
-  }
- 
   .about-us__title{
     font-size: 53px;
-    
+    margin-bottom: 40px;
   }
+  .about-us {
+    margin-bottom: 32px;
+}
 }
