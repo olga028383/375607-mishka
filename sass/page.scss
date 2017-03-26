@@ -2,4 +2,9 @@
   font: 15px/1.6 'Opensans', sans-serif;
   color: #444;
 }
+@include adaptive(tablet){
+  .page{
+    font-size: 17px;
+  }
+}
 
