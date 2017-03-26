@@ -8,16 +8,19 @@
 .nav-home__link{
   font: bold 19px/1.3 "Opensansbold", sans-serif;
   color: #fff;
-  display: table;
   text-decoration: none;
   position: relative;
-  width: 100%;
   box-sizing: border-box;
   @include transition(.2s);
   padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; 
 }
 .nav-home__item--right{
   background:#56c3b2;
+  margin-top:-1px;
 }
 .nav-home__item:hover{
   transform: scaleY(1.05);
@@ -32,16 +35,12 @@
   fill: #3bb09d;
 }
 .nav-home__text{
-  display: table-cell;
-  vertical-align:middle;
   padding: 10px 0;
 }
 .nav-home__icon{
-  display: table-cell;
   width: 56px;
-  vertical-align:middle;
   text-align: center;
-  padding: 20px 0 16px 0;
+  padding: 22px 0 16px 0;
 }
 .nav-home__icon svg{
   height: 100%;
@@ -50,25 +49,31 @@
 @include adaptive(tablet){
   .nav-home__list{
     margin: 0 50px;
+    display: flex;
+   
   }
   .nav-home .container{
     padding: 0 50px;
   }
   .nav-home__list{
     margin: 0;
-    display: table;
-    width: 100%;
     box-sizing: border-box;
     margin: 0;
   }
   .nav-home__item{
-    display: table-cell;
     width: 50%;
-    vertical-align: middle;
+  }
+  .nav-home__item--right{
+    margin-top: 0;
   }
 }
 @include adaptive(pc){
+  .nav-home__link{
+    line-height: 1.5;
+    padding: 0 38px;
+  }
   
-  
-  
+  .nav-home__icon{
+    padding-top: 28px;
+  }
 }
