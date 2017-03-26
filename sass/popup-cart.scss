@@ -1,10 +1,24 @@
 .popup-cart{
+  display: none;
+  position: fixed;
+  margin: auto;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,.7);
+  z-index: 9;
+}
+.popup-cart__container{
   text-align: center;
   padding-top: 32px;
   border-top: 1px solid #c7c7c7;
   padding-bottom: 46px;
-  box-shadow: 0 10px 15px 0px rgba(0,0,0, .2);
+  box-shadow: 0 4px 8px 0px rgba(0,0,0, .2);
   margin-bottom: 20px;
+  background:#fff;
+  width: 570px;
+  margin: auto;
 }
 .popup-cart__title{
   color: #000;
@@ -50,5 +64,12 @@
 	@include btn_link(17px, Opensansbold, 52px, #63d1bb, #fff);
 	border: 2px solid #63d1bb;
     display: block;
+}
+.popup-cart__wrap-btn{
+  width: 264px;
+  margin: 0 auto;
+}
+.popup-cart--show{
+  display: flex;
 }
 
