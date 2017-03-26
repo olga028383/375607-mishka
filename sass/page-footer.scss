@@ -7,7 +7,6 @@
 .page-footer .container{
   padding-left: 30px;
   padding-right: 30px;
-  @include clearfix();
 }
 .page-footer__social{
   text-align: center;
@@ -43,23 +42,24 @@
 @include adaptive(tablet){
   .page-footer__logo{
     display: block;
-    float:left;
-    width: 100px;
-  }
-  .page-footer__logo svg{
-    width: 100%;
+    width: 200px;
   }
   .page-footer__copyright{
-    float: right;
-
+    width: 200px;
+    text-align: right;
   }
   .page-footer .container{
     padding-left: 50px;
     padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer {
+    padding-top: 52px;
+    padding-bottom: 45px;
   }
 }
 @include adaptive(pc){
-  .page-footer .container{
-    padding-left: 0;
-  }
+  
 }
