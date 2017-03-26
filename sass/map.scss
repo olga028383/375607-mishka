@@ -2,12 +2,18 @@
   max-width: 100%;
 }
 .map {
-  margin-bottom: 34px;
+  margin-bottom: 38px;
   text-align:center;
   background: url(../../img/map-mobile@1x.jpg) no-repeat center center;
   background-size: cover;
   height: 460px;
 }
+@include adaptive(tablet){
+  .map{
+    margin-bottom: 54px;
+  }
+}
+
 @include adaptive(pc){
   .map{
     position: absolute;
@@ -16,5 +22,6 @@
     width: 525px;
     bottom: 0;
     height: 100%;
+    margin-bottom: 0;
   }
 }
