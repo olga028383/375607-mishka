@@ -6,18 +6,25 @@
   .сommon-menu{
     display: block;
     margin-left: 50px;
-    float:left;
-    max-width: 850px;
+    width: 50%
   }
   .сommon-menu__item{
     display: inline-block;
   }
   .сommon-menu__link{
     display: block;
-    font: bold 16px/1 'Opensansbold',sans-serif;
+    font: bold 15px/1 'Opensans',sans-serif;
     color: #231f20;
-    padding: 30px 50px 0 0;
+    padding: 22px 58px 0 0;
     text-decoration: none;
+    letter-spacing: .6px;
+    @include transition(.2s);
   }
-  
+  .сommon-menu__link:hover{
+    opacity: .6;
+  }
+  .сommon-menu__link:active{
+    opacity: .6;
+  }
+
 }
