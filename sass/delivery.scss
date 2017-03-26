@@ -4,9 +4,17 @@
 @include adaptive(tablet){
   .delivery{
     display: block;
-    float: right;
-    line-height: 1;
-    padding: 30px 50px 30px 0;
+    line-height: 1.3;
+    padding: 20px 50px 22px 0;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+}
+@include adaptive(pc){
+  .delivery{
+    box-sizing: border-box;
+    width: 40%;
   }
 }
 
