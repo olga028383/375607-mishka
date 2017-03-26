@@ -24,20 +24,24 @@
     padding-right: 50px;
   }
   .catalog__item{
-    display: table;
+    display: flex;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
   
 }
 @include adaptive(pc){
   .catalog__list{
     padding: 0 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .catalog__item{
-    display: inline-block;
     vertical-align: top;
-    margin: 0 25px 60px;
+    margin: 0 0 60px;
     width: 316px;
+    display: flex;
+    flex-direction: column;
   }
 }
