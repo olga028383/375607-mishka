@@ -4,15 +4,20 @@
 }
 .page-header__top-line{
   position: relative;
-  padding: 22px 0 18px;
-  border-bottom:1px solid #d3d2d2;
+
+
 }
 .page-header__logo{
-  width: 88px;
-  height:40px;
-  margin: 0 auto;
   display: block;
-  @include transition(.2s);
+  transition: all 0.2s linear;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d3d2d2;
+  height: 41px;
+}
+.page-header__logo svg{
+  max-width: 180px;
 }
 .page-header__logo:hover path{
   fill:#666;
@@ -33,36 +38,77 @@
   padding-bottom: 124px;
   margin-bottom: 0;
 }
+
 @include interval(768px,1150px){
-  .page-header__top-line{
-    @include clearfix();
-  }
-  .page-header__logo{
-    float:left;
-    margin-left: 50px;
-  }
+
   .page-header__title-h1{
     margin-bottom: 60px;
   }
 }
 @include adaptive(tablet){
   .page-header__title-h1{
-    padding-top: 30px;
+    padding-top: 36px;
+    padding-bottom: 80px;
+    
+  }
+  .page-header__title-h1--home{
+    padding-top: 94px;
+    margin-bottom: 0;
+    padding-bottom: 378px;
+  }
+  .page-header__wrap-title{
+    margin-bottom: 80px;
+  }
+  .page-header__wrap-title--home{
+    margin-bottom: 0;
+  }
+  .page-header__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include container();
+
+  }
+  .page-header__logo{
+    width: auto;
+    flex-grow: 1;
+    text-align: left;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .page-header__top-line{
+    border-bottom: 1px solid #d3d2d2;
+    height: 90px;
   }
 }
 @include adaptive(pc){
-  .page-header__top-line{
-    height: 80px;
-    overflow: hidden;
-    padding:0;
+  .page-header__logo {
+    text-align: center;
+    align-self: center;
   }
-  .page-header__logo{
-    margin-top: 20px;
+  .page-header__wrap-title .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .page-header__title-h1{
-    margin-bottom: 60px;
+    width: 100%;
+
   }
-  .page-header__title-h1--home{
+  .page-header__title-h1 {
+    padding-top: 32px;
+    padding-bottom: 100px;
+  }
+  .page-header__title-h1--home {
+    padding-bottom: 356px;
+  }
+  .page-header__wrap-title{
+    margin-bottom: 130px;
+  }
+  .page-header__wrap-title--home{
     margin-bottom: 0;
   }
 }
