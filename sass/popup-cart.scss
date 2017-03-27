@@ -61,14 +61,13 @@
 }
 
 .popup-cart__btn{
-	@include btn_link(17px, Opensansbold, 52px, #63d1bb, #fff);
-	border: 2px solid #63d1bb;
-    display: block;
-}
-.popup-cart__wrap-btn{
+  @include btn_link(17px, Opensansbold, 52px, #63d1bb, #fff);
+  border: 2px solid #63d1bb;
+  display: block;
   width: 264px;
   margin: 0 auto;
 }
+
 .popup-cart--show{
   display: flex;
 }

@@ -40,7 +40,7 @@ $hover: #fff,
 $scale:1)
 {			
   width: 100%;
-  font-family: $font-family, sans-serif;
+  font-family: $font-family, 'Arial',sans-serif;
   font-size: $font_size;
   line-height: $height * $scale;
   color: $color;
@@ -64,7 +64,7 @@ $hover: #fff,
 $scale:1)
 {			
   display: block;
-  font-family: $font-family, sans-serif;
+  font-family: $font-family, "Arial", sans-serif;
   font-size: $font_size;
   line-height: $height * $scale;
   color: $color;
@@ -82,7 +82,7 @@ $scale:1)
 
 @mixin adaptive($media){
   @if $media == pc{
-    @media screen and (min-width: 1151px){@content}
+    @media screen and (min-width: 1150px){@content}
   }
   @else if $media == tablet{
     @media screen and (min-width: 768px){@content}

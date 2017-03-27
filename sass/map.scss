@@ -8,6 +8,18 @@
   background-size: cover;
   height: 460px;
 }
+@include interval(0px,768px){
+  .map{
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+}
+@include interval(769px,1150px){
+  .map{
+    margin-right: -50px;
+    margin-left: -50px;
+  }
+}
 @include adaptive(tablet){
   .map{
     margin-bottom: 54px;

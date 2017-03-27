@@ -36,14 +36,9 @@
 .page-footer__icon path{
   fill: #63d1bb;
 }
-.page-footer__logo{
-  display: none;
-}
+
 @include adaptive(tablet){
-  .page-footer__logo{
-    display: block;
-    width: 200px;
-  }
+  
   .page-footer__copyright{
     width: 200px;
     text-align: right;

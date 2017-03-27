@@ -33,6 +33,7 @@
   height: 56px;
   padding-top: 26px;
   text-align: right;
+ 
 }
 
 .nav-menu__button-icon{
@@ -44,6 +45,7 @@
   margin-top: 12px;
   @include transition(.2s);
   transform: rotate(45deg);
+   border: none;
 }
 .nav-menu__button-icon:before,
 .nav-menu__button-icon:after{
@@ -51,6 +53,7 @@
   position: absolute;
   display: block;
   width: 20px;
+  left: 0;
   height: 2px;
   background:#221f1f;
 
@@ -95,7 +98,7 @@
   }
 }
 
-@include interval(768px, 1150px){
+@include interval(768px, 1149px){
   .menu--nojs .nav-menu{
     position: absolute;
   }

@@ -2,6 +2,7 @@
   padding: 8px 0;
   border-bottom: 1px solid #ececec;
   display: flex;
+  flex-wrap: wrap;
 }
 .products-prop__name{
   flex-shrink:0;
@@ -10,7 +11,7 @@
   font-size: 15px;
 }
 .products-prop__description{
-  overflow: hidden;
-  flex-grow: 1;
+  flex-grow: 4;
   font-size: 15px;
+  width: 70%;
 }

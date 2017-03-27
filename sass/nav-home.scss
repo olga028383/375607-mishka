@@ -50,15 +50,12 @@
   .nav-home__list{
     margin: 0 50px;
     display: flex;
-   
-  }
-  .nav-home .container{
-    padding: 0 50px;
-  }
-  .nav-home__list{
     margin: 0;
     box-sizing: border-box;
     margin: 0;
+  }
+  .nav-home .container{
+    padding: 0 50px;
   }
   .nav-home__item{
     width: 50%;
@@ -72,7 +69,7 @@
     line-height: 1.5;
     padding: 0 38px;
   }
-  
+
   .nav-home__icon{
     padding-top: 28px;
   }

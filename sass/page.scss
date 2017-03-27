@@ -1,6 +1,7 @@
 .page{
   font: 15px/1.6 'Opensans', sans-serif;
   color: #444;
+  min-width: 320px;
 }
 @include adaptive(tablet){
   .page{
