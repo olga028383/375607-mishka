@@ -5,7 +5,9 @@
 .product-of-week__subtitle{
   text-transform: uppercase;
   color: #63d1bb;
-  font: 17px/1.5 "Opensansbold", sans-serif;
+  font-size: 17px; 
+  line-height: 1.5;
+  font-family: 'Opensansbold', 'Arial',sans-serif;
   display: block;
   margin-bottom: 20px;
 }
@@ -44,7 +46,7 @@
   }
   .product-of-week__images{
     position: absolute;
-    right: -97%;
+    left: 100%;
     top: 6px;
     bottom: 0;
     background: #f1f1f1 url(../../img/triple-set-mobile@1x.jpg) no-repeat center center;
@@ -110,14 +112,14 @@
     padding-top: 75px;
   }
   .product-of-week__header{
-    min-height: 158px;
+    min-height: 148px;
     position: relative;
     z-index: 1;
     display: flex;
     align-items: center;
   }
   .product-of-week__subtitle{
-    width: 100px;
+    width: 110px;
     font-size: 17px;
     max-width: 100%;
     order: -1;
@@ -127,11 +129,6 @@
   .product-of-week__title{
     font-size: 53px;
     line-height: 1.2;
-  }
-  .product-of-week__images{
-    top: -160px;
-    left: 102%;
-    width: 102%;
   }
   .product-of-week__body{
     padding-left: 175px;
@@ -143,10 +140,14 @@
     margin-bottom: 90px;
   }
   .product-of-week__body {
-    width: 49%
+    width: 50%
   }
   .product-of-week {
     padding-bottom: 96px;
     margin-bottom: 26px;
+  }
+  .product-of-week__images{
+    top: -150px;
+    width: 100%;
   }
 }

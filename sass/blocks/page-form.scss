@@ -9,14 +9,12 @@
   line-height: 1.8;
   margin-bottom: 24px;
 }
-.page-form__element--type,.page-form__element--color,.page-form__element--mail{
-  margin-bottom: 10px;
-}
-.page-form__element--fio{
-  margin-bottom: 12px;
-}
+.page-form__element--type,
+.page-form__element--color,
+.page-form__element--mail,
+.page-form__element--fio,
 .page-form__element--phone{
-  margin-bottom: 8px;
+  margin-bottom: 32px;
 }
 .page-form__title{
   font-size: 17px;
@@ -77,13 +75,12 @@
     justify-content: flex-start;
   }
   .page-form__title{
-    width: 175px;
+    width: 165px;
     flex-shrink: 0;
   }
   .page-form__field-group{
     width:100%;
   }
-  
   .page-form__element--color,.page-form__element--phone,.page-form__element--mail{
     background:#f1f1f1;
   }
@@ -107,7 +104,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .page-form__wrap-btn{
+  .page-form__btn{
     order:-1;
     width: 230px;
   }
@@ -127,6 +124,7 @@
   .page-form__element--color{
     padding-top: 50px;
     padding-bottom: 26px;
+    margin-bottom: 6px;
   }
   .page-form__element--fio{
     padding-top: 40px;
@@ -137,11 +135,20 @@
     padding-top: 50px;
   }
   .page-form__element--mail{
-    padding-bottom: 26px;
+    padding-bottom: 30px;
     margin-bottom: 50px;
   }
   .page-form {
     margin-bottom: 50px;
+  }
+  .page-form__checkbox-wrap{
+    margin-bottom: 26px;
+  }
+  .page-form__field--block{
+    margin-bottom: 24px;
+  }
+  .page-form__textarea{
+    font-size: 19px;
   }
 }
 @include adaptive(pc){
@@ -162,5 +169,8 @@
     padding-right: 225px;
     padding-left: 225px;
     padding-top: 36px;
+  }
+  .page-form__title {
+    width: 175px;
   }
 }

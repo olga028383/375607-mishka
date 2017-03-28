@@ -1,5 +1,5 @@
 .menu-service{
-font-size: 0;
+  font-size: 0;
 } 
 .menu-service__link{
   display: block;
@@ -14,7 +14,9 @@ font-size: 0;
   opacity: .3;
 }
 .menu-service__text{
-  font: bold 17px/1 'Opensansbold', 'Arial',sans-serif;
+  font-size: 17px; 
+  line-height: 1;
+  font-family: 'Opensansbold', 'Arial',sans-serif;
   color:#231f20;
   display:inline-block;
   vertical-align: middle;
@@ -25,7 +27,6 @@ font-size: 0;
   width: 80px;
   text-align:center;
 }
-
 .menu-service__icon path{
   fill:#d3d2d2;
   @include transition(.2s);
@@ -40,7 +41,7 @@ font-size: 0;
   position: absolute;
   left: 0;
   right:0;
-  top: 238px;
+  top: 239px;
   z-index: 1;
   background: #fff;
   @include transition(.2s);
@@ -57,12 +58,12 @@ font-size: 0;
   }
 }
 @include adaptive(tablet){
- 
   .menu-service{
     display: flex;
     width: 345px;
     position: static;
     height: 90px;
+    order: -1;
   }
   .menu-service__item{
     border-bottom: none;
@@ -85,8 +86,11 @@ font-size: 0;
     position: static;
   }
   .menu-service__text {
-    font: bold 17px/1 'Opensans','Arial',sans-serif;
+    font-size: 17px; 
+    line-height: 1;
+    font-family: 'Opensans', 'Arial',sans-serif;
     letter-spacing: .5px;
+    font-weight: 700;
   }
 }
 

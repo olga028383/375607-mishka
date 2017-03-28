@@ -1,8 +1,0 @@
-.price{
-  font: 17px/1 'Opensansbold','Arial', sans-serif;
-}
-@include adaptive(tablet){
-  .price{
-  font-size: 19px;
-  }
-}

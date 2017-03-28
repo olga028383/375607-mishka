@@ -1,7 +1,7 @@
-function Popup(){
-
+function Popup(options){
   this.popup = document.querySelector('.popup-cart');
-  this.btn = document.querySelectorAll('.product__icon-add-cart');
+  if(!this.popup) return;
+  this.btn = options.btn;
   this.close = document.querySelector('.popup-cart__btn');
   
   this.showPopup = this.showPopup.bind(this);
@@ -42,4 +42,9 @@ MenuMobile.prototype.toggleMenu = function(){
 };
 
 new MenuMobile;
-new Popup;
+new Popup({
+  btn: document.querySelectorAll('.product__icon-add-cart')
+});
+new Popup({
+  btn: document.querySelectorAll('.product-of-week__btn')
+});

@@ -1,0 +1,10 @@
+.price{
+  font-size: 17px; 
+  line-height: 1;
+  font-family: 'Opensansbold', 'Arial',sans-serif;
+}
+@include adaptive(tablet){
+  .price{
+  font-size: 19px;
+  }
+}

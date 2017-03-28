@@ -7,7 +7,9 @@
   padding-right: 30px;
 }
 .news__title{
-  font: 17px/1.5 'Opensansbold', sans-serif;
+  font-size: 17px; 
+  line-height: 1.5;
+  font-family: 'Opensansbold', 'Arial',sans-serif;
   display: table-cell;
   vertical-align: middle;
 }
@@ -28,7 +30,11 @@
 .news__video{
   position: relative;
   text-align:center;
-
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 152px;
 }
 .news__video img{
   width: 100%;
@@ -37,10 +43,12 @@
   position: absolute;
   top: 50%;
   left:50%;
-  margin-top: -34px;
-  margin-left: -50px;
+  margin-top: -38px;
+  margin-left: -60px;
   @include transition(.2s);
   cursor:pointer;
+  border: none;
+  background: transparent;
 }
 .news__play:hover{
   transform: scale(1.2);
@@ -59,14 +67,18 @@
   font-size: 13px;
   line-height:1.8;
 }
-@include interval(0, 768px){
+@include interval(0, 767px){
   .news__title-wrap{
     padding: 21px 32px;
     border: 1px solid #ececec;
     border-bottom: 0;
   }
 }
+
 @include adaptive(tablet){
+  .news{
+    margin-bottom: 58px;
+  }
   .news .container {
     display: flex;
     flex-direction: column;
@@ -75,15 +87,32 @@
   }
   .news__video{
     order: -1;
+    height: 455;
   }
   .news__title-wrap {
     padding-bottom: 0;
-    padding-left: 32px;
+    padding-left: 42px;
     padding-top: 32px;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
+    padding-right: 42px;
   }
-
+  .news__title{
+    font-size: 20px;
+  }
+  .news__description-wrap{
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 34px;
+    padding-bottom: 46px;
+  }
+  .news__description{
+    font-size: 15px;
+    margin-bottom: 38px;
+  }
+  .news__title-icon{
+    width: 66px;
+  }
 }
 @include adaptive(pc){
 
@@ -93,6 +122,8 @@
   }
   .news__title-wrap{
     padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .news__description{
     margin-bottom: 46px;
@@ -115,6 +146,7 @@
     bottom: 0;
     width: 683px;
     display: flex;
+    height: 100%;
   }
   .news__title-wrap {
     padding-bottom: 30px;
@@ -137,7 +169,7 @@
     padding-right: 26px;
     padding-bottom: 60px;
   }
-  .news__wrap-btn{
+  .news__btn{
     width: 232px;
   }
   .news {

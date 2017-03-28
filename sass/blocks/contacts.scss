@@ -16,7 +16,7 @@
   overflow: hidden;
   font-style: normal;
   max-width: 300px;
-  margin-left: 8px;
+  margin-left: 30px;
 }
 .contacts__item-description--mail{
   display: inline-block;
@@ -34,18 +34,15 @@
 .contacts__item-description--mail:active{
   opacity:.5;
 }
-.contacts__-btn{
+.contants__btn{
   margin-bottom: 40px;
 }
-.contacts .container{
+.contacts{
+  @include container();
   padding-left: 30px;
   padding-right: 30px;
 }
 @include adaptive(tablet){
-  .contacts .container{
-    padding-left: 50px;
-    padding-right: 50px;
-  }
   .contacts__title{
     font-size: 43px;
     padding: 14px 0 15px;
@@ -79,7 +76,7 @@
     margin-bottom: 56px;
   }
 }
-@include interval(768px, 1150px){
+@include interval(768px, 1149px){
   .contacts__list{
     display: flex;
   }
@@ -93,22 +90,23 @@
   }
 }
 @include adaptive(pc){
+  .contacts__wrap{
+    width: 50%;
+    padding-left: 18px;
+    box-sizing: border-box;
+    padding-right: 18px;
+  }
   .contacts__title{
     font-size: 53px;
-    width: 50%;
     padding-left: 160px;
     border-right: none;
     border-left: 5px solid #221f1f;
     box-sizing: border-box;
   }
   .contacts__list{
-    width: 42%;
     padding-left: 160px;
     box-sizing: border-box;
     margin-bottom: 78px;
-  }
-  .contacts .container{
-    padding-left: 65px;
   }
   .contants__btn{
     width: 228px;

@@ -20,7 +20,9 @@
 }
 .about-us__description{
   display: block;
-  font: 17px/1.2 'Opensansbold', 'Arial',sans-serif;
+  font-size: 17px; 
+  line-height: 1.2;
+  font-family: 'Opensansbold', 'Arial',sans-serif;
   margin-bottom: 30px;
 }
 .about-us__icon path{
