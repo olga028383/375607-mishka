@@ -1,5 +1,7 @@
 .reviews{
   margin-bottom: 40px;
+  background: transparent url(../../img/bg-zigzag-line.svg) repeat-x bottom center;
+  background-size: 400px;
 }
 .reviews .container{
   padding-left: 30px;
@@ -69,14 +71,21 @@
   .reviews{
     background-size: 45% 100%;
     position: relative;
-    padding-bottom: 52px;
+    padding-bottom: 44px;
     margin-bottom: 46px;
+    background-size: 600px;
   }
   .reviews .container{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 70px;
     background: url(../../img/review@1x.jpg) no-repeat left top;
+    background-size: 350px;
+  }
+  @include adaptive(retina){
+    .reviews .container{
+      background-image: url(../../img/review@2x.jpg);
+    }
   }
   .reviews__btn{
     position: absolute;
@@ -123,6 +132,7 @@
   .reviews {
     padding-bottom: 92px;
     margin-bottom: 72px;
+    background-size: 1150px;
   }
    .reviews__arrow-wrap{
     bottom: 94px;

@@ -98,10 +98,13 @@
   }
   .contacts__title{
     font-size: 53px;
-    padding-left: 160px;
     border-right: none;
-    border-left: 5px solid #221f1f;
     box-sizing: border-box;
+    border-right: none;
+    border-left: 4px solid #221f1f;
+    margin-left: 48px;
+    padding: 8px 0 14px 106px;
+    margin-bottom: 30px;
   }
   .contacts__list{
     padding-left: 160px;
@@ -118,13 +121,6 @@
   }
   .contacts__title::after{
     left: -5px;
-  }
-  .contacts__title {
-    border-right: none;
-    border-left: 4px solid #221f1f;
-    margin-left: 48px;
-    padding: 8px 0 14px 102px;
-    margin-bottom: 30px;
   }
   .contacts__item {
     margin-bottom: 28px;

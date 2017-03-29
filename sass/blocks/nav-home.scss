@@ -1,5 +1,6 @@
 .nav-home{
   background: #f9f9f9;
+   position: relative;
 }
 .nav-home__item{
   background: #63d1bb;
@@ -65,13 +66,31 @@
   .nav-home__item--right{
     margin-top: 0;
   }
+  .nav-home:before{
+    content: '';
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: -20px;
+    height: 34px;
+    background: transparent url(../../img/bg-zigzag-fill.svg) repeat-x top center;
+    z-index: 1;
+    background-size: contain;
+  }
+  .nav-home__link{
+    line-heigth: 1.5;
+    height: 120px;
+    padding-bottom: 10px;
+  }
 }
 @include adaptive(pc){
   .nav-home__link{
     line-height: 1.5;
     padding: 0 38px;
   }
-
+  .nav-home{
+    margin-bottom: 54px;
+  }
   .nav-home__icon{
     padding-top: 28px;
   }
