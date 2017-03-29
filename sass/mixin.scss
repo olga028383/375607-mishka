@@ -40,7 +40,7 @@ $hover: #fff,
 $scale:1)
 {			
   width: 100%;
-  font-family: $font-family, sans-serif;
+  font-family: $font-family, 'Arial',sans-serif;
   font-size: $font_size;
   line-height: $height * $scale;
   color: $color;
@@ -64,7 +64,7 @@ $hover: #fff,
 $scale:1)
 {			
   display: block;
-  font-family: $font-family, sans-serif;
+  font-family: $font-family, "Arial", sans-serif;
   font-size: $font_size;
   line-height: $height * $scale;
   color: $color;
@@ -100,7 +100,6 @@ $scale:1)
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
-  overflow: hidden;
   
   @include adaptive(tablet){
     padding-left:50px;

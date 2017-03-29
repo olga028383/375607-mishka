@@ -1,0 +1,132 @@
+.contacts{
+  margin-bottom: 40px;
+  position: relative;
+}
+.contacts__list{
+  margin-bottom: 42px;
+}
+.contacts__item {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: start;
+  font-size: 15px;
+  line-height: 1.9;
+}
+.contacts__item-description{
+  overflow: hidden;
+  font-style: normal;
+  max-width: 300px;
+  margin-left: 30px;
+}
+.contacts__item-description--mail{
+  display: inline-block;
+  text-decoration: none;
+  color:#444;
+  line-height: 1.8;
+  @include transition(.2s);
+}
+.contacts__item-description--mail span{
+  border-bottom: 1px solid #63d1bb;
+}
+.contacts__item-description--mail:hover{
+  color:#63d1bb;
+}
+.contacts__item-description--mail:active{
+  opacity:.5;
+}
+.contants__btn{
+  margin-bottom: 40px;
+}
+.contacts{
+  @include container();
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@include adaptive(tablet){
+  .contacts__title{
+    font-size: 43px;
+    padding: 14px 0 15px;
+    border-right: 4px solid #221f1f;
+    margin-right: 40px;
+    margin-bottom: 35px;
+    position: relative;
+  }
+  .contacts__title:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 20px solid #63d1bb;
+    left: 100%;
+    margin-left: 8px;
+    top: 2px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: none;
+    border-left-width: 40px;
+  }
+  .contacts__item,.contacts__item{
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .contacts__list{
+    margin-bottom: 22px;
+  }
+  .contacts{
+    margin-bottom: 56px;
+  }
+}
+@include interval(768px, 1149px){
+  .contacts__list{
+    display: flex;
+  }
+  .contacts__item {
+    width: 50%;
+    vertical-align: top;
+  }
+  .contants__btn{
+    width: 228px;
+    margin: 0 auto;
+  }
+}
+@include adaptive(pc){
+  .contacts__wrap{
+    width: 50%;
+    padding-left: 18px;
+    box-sizing: border-box;
+    padding-right: 18px;
+  }
+  .contacts__title{
+    font-size: 53px;
+    padding-left: 160px;
+    border-right: none;
+    border-left: 5px solid #221f1f;
+    box-sizing: border-box;
+  }
+  .contacts__list{
+    padding-left: 160px;
+    box-sizing: border-box;
+    margin-bottom: 78px;
+  }
+  .contants__btn{
+    width: 228px;
+    margin-left: 160px;
+  }
+  .contacts{
+    padding-top: 60px;
+    margin-bottom: 106px;
+  }
+  .contacts__title::after{
+    left: -5px;
+  }
+  .contacts__title {
+    border-right: none;
+    border-left: 4px solid #221f1f;
+    margin-left: 48px;
+    padding: 8px 0 14px 102px;
+    margin-bottom: 30px;
+  }
+  .contacts__item {
+    margin-bottom: 28px;
+  }
+}

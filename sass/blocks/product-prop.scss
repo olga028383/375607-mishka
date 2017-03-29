@@ -1,12 +1,16 @@
 .products-prop{
   padding: 8px 0;
   border-bottom: 1px solid #ececec;
+  display: flex;
+  flex-wrap: wrap;
 }
 .products-prop__name{
-  float: left;
+  flex-shrink:0;
   width: 80px;
   margin-right: 18px;
+  font-size: 15px;
 }
 .products-prop__description{
-  overflow: hidden;
+  flex-grow: 4;
+  font-size: 15px;
 }

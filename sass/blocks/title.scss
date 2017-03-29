@@ -1,5 +1,7 @@
 .title{
-  font: 27px/1.4 'Opensansbold', sans-serif;
+  font-size: 27px; 
+  line-height: 1.4;
+  font-family: 'Opensansbold', 'Arial',sans-serif;
   color:#231f20;
 }
 .title__link{
@@ -7,6 +9,7 @@
   @include transition(.2s);
   text-decoration: none;
   display: block;
+  @include container();
 }
 .title__link:hover{
   color: rgba(0,0,0,.6);

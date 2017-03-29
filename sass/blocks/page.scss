@@ -1,0 +1,13 @@
+.page{
+  font-size: 15px; 
+  line-height: 1.6;
+  font-family: 'Opensans', 'Arial',sans-serif;
+  color: #444;
+  min-width: 320px;
+}
+@include adaptive(tablet){
+  .page{
+    font-size: 17px;
+  }
+}
+
