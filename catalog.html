@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script>
+          document.createElement("picture");
+        </script>
+        <script src="js/picturefill.min.js" async type="text/javascript"></script>
         </head>
         <body class="page">
           <header class="page-header">
@@ -256,18 +260,20 @@
                                                                           </div>
                                                                         </footer>
                                                                         <div  class="popup-cart">
-                                                                          <span class="popup-cart__title">Добавить<br> в корзину</span>
-                                                                          <p class="popup-cart__subtitle">Выберите размер:</p>
-                                                                          <form name="sizeForm" action="/">
-                                                                            <ul class="popup-cart__list">
-                                                                              <li class="popup-cart__item">s</li>
-                                                                              <li class="popup-cart__item">m</li>
-                                                                              <li class="popup-cart__item">l</li>
-                                                                            </ul>
-                                                                            <a href="/" class="popup-cart__btn">добавить</a>
-                                                                          </form>
+                                                                          <div class="popup-cart__container">
+                                                                            <span class="popup-cart__title">Добавить<br> в корзину</span>
+                                                                            <p class="popup-cart__subtitle">Выберите размер:</p>
+                                                                            <form name="sizeForm" action="/">
+                                                                              <ul class="popup-cart__list">
+                                                                                <li class="popup-cart__item">s</li>
+                                                                                <li class="popup-cart__item">m</li>
+                                                                                <li class="popup-cart__item">l</li>
+                                                                              </ul>
+                                                                              <a href="/" class="popup-cart__btn">добавить</a>
+                                                                            </form>
+                                                                          </div>
                                                                         </div>
                                                                         <script src="js/main.js" type="text/javascript"></script>
-                                                                        <script src="js/picturefill.min.js" type="text/javascript"></script>
+
                                                                         </body>
                                                                         </html>
