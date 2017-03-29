@@ -35,6 +35,10 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+.product-of-week__images img{
+  max-width: auto;
+  height: 100%
+} 
 @include adaptive(tablet){
   .product-of-week {
     background-size: 600px;
