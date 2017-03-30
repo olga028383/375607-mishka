@@ -2,9 +2,6 @@
   display: block;
   transition: all 0.2s linear;
   text-align: center;
-  padding-top: 22px;
-  padding-bottom: 18px;
-  height: 41px;
 }
 .logo svg{
   max-width: 180px;
@@ -17,6 +14,9 @@
 }
 .logo--header{
   order: -1;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  height: 41px;
 }
 .logo--footer{
   display: none;
@@ -42,9 +42,9 @@
 }
 @include adaptive(pc){
   .logo--header {
-    text-align: center;
     align-self: center;
     width: auto;
+    margin-left: 7%;
   }
   .logo--header svg{
     margin: 0 auto;

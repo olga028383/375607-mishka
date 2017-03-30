@@ -99,7 +99,6 @@
 }
 @include adaptive(pc){
   .product__img{
-    height: 236px;
     overflow: hidden;
   }
   .product__description-wrap{
