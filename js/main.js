@@ -2,7 +2,7 @@ function Popup(options){
   this.popup = document.querySelector('.popup-cart');
   if(!this.popup) return;
   this.btn = options.btn;
-  this.close = document.querySelector('.popup-cart__btn');
+  this.close = document.querySelector('.popup-form__btn');
   
   this.showPopup = this.showPopup.bind(this);
   this.hidePopup = this.hidePopup.bind(this);
@@ -26,10 +26,10 @@ Popup.prototype.hidePopup = function(e){
 
 
 function MenuMobile(){
-  this.menu = document.querySelector('.page-header__top-line');
-  this.btn = this.menu.querySelector('.js-button-menu');
+  this.menu = document.querySelector('.nav-menu');
+  this.btn = this.menu.querySelector('.nav-menu__button');
   
-  this.menu.classList.remove('menu--nojs');
+  this.menu.classList.remove('nav-menu--nojs');
   this.menu.classList.add('nav-menu--close');
   
   this.toggleMenu = this.toggleMenu.bind(this);
