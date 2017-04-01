@@ -1,29 +1,31 @@
 .title{
   font-size: 27px; 
   line-height: 1.4;
-  font-family: 'Opensansbold', 'Arial',sans-serif;
-  color:#231f20;
+  font-family: "Opensansbold", "Arial", sans-serif;
+  color: #231f20;
 }
 .title__link{
-  color: #000;
-  @include transition(.2s);
+  color: $color-black;
+  transition: all 0.2s linear;
   text-decoration: none;
   display: block;
   @include container();
-}
-.title__link:hover{
-  color: rgba(0,0,0,.6);
-}
-.title__link:active{
-  color: rgba(0,0,0,.2);
+
+  &:hover{
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  &:active{
+    color: rgba(0, 0, 0, 0.2);
+  }
 }
 @include adaptive(tablet){
   .title{
-  font-size: 43px;
+    font-size: 43px;
   }
 }
 @include adaptive(pc){
   .title{
-  font-size: 53px;
+    font-size: 53px;
   }
 }

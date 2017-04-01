@@ -1,10 +1,10 @@
 .price{
-  font-size: 17px; 
+  font-size: 16px; 
   line-height: 1;
-  font-family: 'Opensansbold', 'Arial',sans-serif;
+  font-family: "Opensansbold", "Arial", sans-serif;
 }
 @include adaptive(tablet){
   .price{
-  font-size: 19px;
+    font-size: 19px;
   }
 }

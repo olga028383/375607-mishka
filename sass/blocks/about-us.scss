@@ -1,52 +1,54 @@
 .about-us{
   padding-top: 25px;
   margin-bottom: 56px;
-  font-size:0;
+  font-size: 0;
 }
-.about-us .container{
+.about-us__container{
   padding-left: 30px;
   padding-right: 30px;
 }
 .about-us__title{
   font-size: 25px;
   margin-bottom: 29px;
+  margin-top: 0;
+}
+.about-us__list{
+  padding-left: 0;
+}
+.about-us__icon-wrap{
+  display: block;
+  margin-bottom: 18px;
 }
 .about-us__icon{
-  display: block;
-    margin-bottom: 18px;
-    width: 48px;
-    text-align: center;
+  width: 48px;
   height: 35px;
+  fill: $color-green;
 }
 .about-us__description{
   display: block;
   font-size: 17px; 
   line-height: 1.2;
-  font-family: 'Opensansbold', 'Arial',sans-serif;
+  font-family: "Opensansbold", "Arial", sans-serif;
   margin-bottom: 30px;
-}
-.about-us__icon path{
-  fill: #63d1bb;
 }
 @include adaptive(tablet){
   .about-us{
     margin-bottom: 25px;
   }
-  .about-us__item{
-    width: 50%;
-  }
-  .about-us__list{
-    display: flex;
-    flex-wrap: wrap;
+  .about-us__container{
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .about-us__title{
     font-size: 43px;
     margin-bottom: 44px;
   }
-  
-  .about-us .container{
-    padding-left: 50px;
-    padding-right: 50px;
+  .about-us__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-us__item{
+    width: 50%;
   }
   .about-us__description{
     width: 300px;
@@ -55,16 +57,18 @@
   }
 }
 @include adaptive(pc){
-  .about-us .container{
+  .about-us {
+    margin-bottom: 32px;
+  }
+  .about-us__container{
     padding-left: 225px;
     padding-right: 225px;
-
   }
   .about-us__title{
     font-size: 53px;
     margin-bottom: 40px;
   }
-  .about-us {
-    margin-bottom: 32px;
-}
+  .about-us__description{
+    margin-bottom: 56px;
+  }
 }

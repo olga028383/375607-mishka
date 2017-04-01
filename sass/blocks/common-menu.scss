@@ -1,6 +1,7 @@
 .сommon-menu{
   display: none;
-  font-size:0;
+  font-size: 0;
+  padding: 0;
 }
 @include adaptive(pc){
   .сommon-menu{
@@ -9,24 +10,25 @@
   }
   .сommon-menu__item{
     display: inline-block;
+    vertical-align: top;
   }
   .сommon-menu__link{
     display: block;
     font-size: 15px; 
     line-height: 1;
-    font-family: 'Opensans', 'Arial',sans-serif;
+    font-family: "Opensansbold", "Arial", sans-serif;
     color: #231f20;
     padding: 22px 58px 0 0;
     text-decoration: none;
-    letter-spacing: .6px;
-    @include transition(.2s);
-    font-weight: 700;
-  }
-  .сommon-menu__link:hover{
-    opacity: .6;
-  }
-  .сommon-menu__link:active{
-    opacity: .6;
-  }
+    transition: all 0.2s linear;
+    letter-spacing: 0.3px;
 
+    &:hover{
+      opacity: 0.6;
+    }
+    
+    &:active{
+      opacity: 0.3;
+    }
+  }
 }

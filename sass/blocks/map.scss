@@ -1,12 +1,20 @@
-.map img{
-  max-width: 100%;
-}
 .map {
-  margin-bottom: 38px;
-  text-align:center;
-  background: url(../../img/map-mobile@1x.jpg) no-repeat center center;
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: #f1f1f1;
+  background: url(../../img/map-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   height: 460px;
+  
+  div{
+    height: 100%;
+  }
+  
+  img{
+    max-width: 100%;
+  }
 }
 @include adaptive(retina){
   .map{
@@ -40,8 +48,8 @@
   .map{
     position: absolute;
     top: 0;
-    left: 55%;
-    width: 45%;
+    left: 54.5%;
+    width: 45.5%;
     bottom: 0;
     height: 100%;
     margin-bottom: 0;

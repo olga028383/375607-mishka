@@ -1,58 +1,59 @@
 .menu-service{
-  font-size: 0;
-} 
+  top: 242px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  z-index: 2;
+}
 .menu-service__link{
   display: block;
-  padding: 30px 0 30px 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   position: relative;
-}
-.menu-service__link:hover .menu-service__text{
-  opacity: .6;
-}
-.menu-service__link:active .menu-service__text{
-  opacity: .3;
+  line-height: 1;
+
+  &:hover .menu-service__icon{
+    fill: $color-green;
+  }
+  
+  &:active .menu-service__icon{
+    opacity: 0.5;
+  }
+  
+  &:hover .menu-service__text{
+    opacity: 0.6;
+  }
+  
+  &:active .menu-service__text{
+    opacity: 0.3;
+  }
 }
 .menu-service__text{
   font-size: 17px; 
   line-height: 1;
-  font-family: 'Opensansbold', 'Arial',sans-serif;
-  color:#231f20;
-  display:inline-block;
+  font-family: "Opensansbold", "Arial", sans-serif;
+  color: #231f20;
+  display: inline-block;
   vertical-align: middle;
+  transition: all 0.2s linear;
 }
-.menu-service__icon{
+.menu-service__icon-wrap{
   display: inline-block;
   vertical-align: middle;
   width: 80px;
-  text-align:center;
+  text-align: center;
 }
-.menu-service__icon path{
-  fill:#d3d2d2;
-  @include transition(.2s);
+.menu-service__icon{
+  fill: #d3d2d2;
+  transition: all 0.2s linear;
+  width: 20px;
+  height: 20px;
 }
-.menu-service__link:hover path{
-  fill: #63d1bb;
-}
-.menu-service__link:active path{
-  opacity:.5;
-}
-.menu-service{
-  position: absolute;
-  left: 0;
-  right:0;
-  top: 239px;
-  z-index: 1;
-  background: #fff;
-  @include transition(.2s);
-}
-.nav-menu--close .menu-service{
-  transform: translateX(-100%);
-}
-.menu--nojs .menu-service{
-  position: static;
-}
-@include interval(0, 768px){
+@include interval(0, 767px){
   .menu-service__item{
     border-bottom: 1px solid #d3d2d2;
   }
@@ -64,6 +65,7 @@
     position: static;
     height: 90px;
     order: -1;
+    z-index: 0;
   }
   .menu-service__item{
     border-bottom: none;
@@ -75,22 +77,12 @@
     align-items: center;
     height: 100%;
   }
-  .nav-menu__text--search{
-    display: none;
-  }
   .menu-service__search{
     display: none;
   }
-  .nav-menu--close .menu-service{
-    transform: translateX(0);
-    position: static;
-  }
-  .menu-service__text {
+  .menu-service__text{
     font-size: 17px; 
     line-height: 1;
-    font-family: 'Opensans', 'Arial',sans-serif;
-    letter-spacing: .5px;
-    font-weight: 700;
   }
 }
 

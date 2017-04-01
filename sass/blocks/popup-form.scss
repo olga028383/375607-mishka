@@ -1,0 +1,63 @@
+.popup-form{
+  font-size: 0;
+}
+.popup-form__subtitle{
+  display: block;
+  margin-bottom: 32px;
+}
+.popup-form__item-wrap{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 22px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.popup-form__item{
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 82px;
+  border: 1px solid #ececec;
+  height: 52px;
+  font-size: 17px; 
+  line-height: 52px;
+  font-family: "Opensansbold", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin-left: 8px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &:hover{
+    border-color: #c7c7c7;
+  }
+  
+  &:active{
+    border-color: #62d1ba;
+  }
+  
+  &:first-child{
+    margin-left: 0;
+  }
+}
+.popup-form__field{
+  display: none;
+  
+  &:checked + .popup-form__item{
+    border-color: $color-green;
+  }
+}
+.popup-form__btn{
+  @include btn_link(17px, Opensansbold, 52px, $color-green, #ffffff);
+  border: 2px solid $color-green;
+  display: block;
+  width: 264px;
+  margin: 0 auto;
+  cursor: pointer;
+  
+  &:hover{
+    background: $color-dark-gray;
+    border-color: $color-dark-gray;
+  }
+}
