@@ -14,13 +14,13 @@
 .page-header__title-h1{
   padding-top: 71px;
   padding-bottom: 76px;
-  line-height: 1.1;
+  line-height: 30px;
   text-align: center;
   @include container();
   margin-bottom: 30px;
 }
 .page-header__title-h1--home{
-  padding-bottom: 123px;
+  padding-bottom: 122px;
   margin-bottom: 0;
   width: 60%;
 }
@@ -77,9 +77,9 @@
   .page-header__title-h1--home{
     padding-top: 90px;
     margin-bottom: 0;
-    padding-bottom: 375px;
+    padding-bottom: 372px;
     background-size: 1000px;
-    line-height: 1.15;
+    line-height: 50px;
     width: 620px;
 
     br{
@@ -104,7 +104,7 @@
     padding-bottom: 358px;
     padding-top: 90px;
     margin-bottom: 0;
-    line-height: 1.1;
+    line-height: 57px;
     width: 720px;
   }
   @include adaptive(retina){

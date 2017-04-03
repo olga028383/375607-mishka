@@ -9,10 +9,10 @@
 }
 .page-form__info{
   font-size: 13px;
-  line-height: 1.8;
+  line-height: 24px;
   @include container();
-  margin-top: -6px;
-  margin-bottom: 26px;
+  margin-top: -8px;
+  margin-bottom: 23px;
 }
 .page-form__element{
   @include container();
@@ -76,7 +76,7 @@
 
   &--block{
     display: block;
-    margin-bottom: 19px;
+    margin-bottom: 18px;
   }
 
   &:hover .page-form__icon{
@@ -89,7 +89,7 @@
 }
 .page-form__name{
   font-size: 17px;
-  line-height: 1.1;
+  line-height: 18px;
   font-family: "Opensansbold", "Arial", sans-serif;
   position: relative;
   display: block;
@@ -191,7 +191,7 @@
 .page-form__name-full{
   display: block;
   font-size: 17px;
-  line-height: 1;
+  line-height: 18px;
   font-family: "Opensansbold", "Arial", sans-serif;
   padding-top: 4px;
 }
@@ -281,6 +281,8 @@
   .page-form__info{
     font-size: 17px;
     margin-bottom: 57px;
+    line-height: 30px;
+    margin-top: -6px;
   }
   .page-form__element{
     display: flex;
@@ -313,7 +315,7 @@
 
     &--fio{
       padding-top: 42px;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
   }
   .page-form__field-group{
@@ -359,6 +361,7 @@
   }
   .page-form__name{
     font-size: 19px;
+    line-height: 18px;
 
     &--radio{
       margin-bottom: 23px;
@@ -408,7 +411,7 @@
   }
   .page-form__field--block{
     display: flex;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
   .page-form__footer{
     padding-top: 40px;
@@ -430,7 +433,7 @@
   .page-form__info{
     padding-left: 225px;
     padding-right: 225px;
-    margin-top: -9px;
+    margin-top: -8px;
   }
   .page-form__title{
     width: 175px;
@@ -451,7 +454,7 @@
     }
 
     &--mail{
-      padding-bottom: 50px;
+      padding-bottom: 52px;
     }
   }
   .page-form__tel,

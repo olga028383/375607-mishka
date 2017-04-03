@@ -18,7 +18,7 @@
 }
 .about-us__icon-wrap{
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
   &--style{
     margin-bottom: 25px;
@@ -26,7 +26,6 @@
 
   &--heart{
     padding-top: 4px;
-    padding-bottom: 3px;
   }
 
   &--manufacturer{
@@ -44,7 +43,7 @@
 .about-us__description{
   display: block;
   font-size: 17px;
-  line-height: 1.2;
+  line-height: 20px;
   font-family: "Opensansbold", "Arial", sans-serif;
   margin-bottom: 30px;
 }
@@ -97,6 +96,7 @@
     font-size: 19px;
     margin-bottom: 58px;
     letter-spacing: .8px;
+    line-height: 22px;
   }
 }
 @include adaptive(pc){
@@ -113,6 +113,6 @@
     margin-bottom: 49px;
   }
   .about-us__description{
-    margin-bottom: 58px;
+    margin-bottom: 57px;
   }
 }
