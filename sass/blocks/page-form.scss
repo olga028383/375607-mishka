@@ -10,16 +10,15 @@
 .page-form__info{
   font-size: 13px;
   line-height: 1.8;
-  margin-bottom: 24px;
   @include container();
   margin-top: -6px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 .page-form__element{
   @include container();
 
   &--type{
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
   
   &--color{
@@ -169,6 +168,12 @@
   width: 16px;
   border-radius: 50%;
 }
+.page-form__field:first-child .page-form__name--radio:before{
+  margin-top: -12px;
+}
+.page-form__field:first-child .page-form__name--radio:after{
+  margin-top: -12px;
+}
 .page-form__checkbox:checked + .page-form__name--checkbox::after{
   content: "";
   position: absolute;
@@ -185,7 +190,7 @@
 }
 .page-form__name-full{
   display: block;
-  font-size: 17px; 
+  font-size: 17px;
   line-height: 1;
   font-family: "Opensansbold", "Arial", sans-serif;
   padding-top: 4px;
@@ -197,7 +202,7 @@
   border-bottom: 2px solid $color-dark-gray;
   height: 52px;
   width: 100%;
-  font-size: 17px; 
+  font-size: 17px;
   line-height: 1;
   font-family: "Opensans", "Arial", sans-serif;
   transition: all 0.2s linear;
@@ -213,10 +218,10 @@
 .page-form__textarea{
   width: 100%;
   height: 142px;
-  padding: 12px 16px;
+  padding: 13px 14px;
   border: 2px solid $color-dark-gray;
   box-sizing: border-box;
-  font-size: 17px; 
+  font-size: 17px;
   line-height: 1;
   font-family: "Opensans", "Arial", sans-serif;
   transition: all 0.2s linear;
@@ -276,7 +281,6 @@
   .page-form__info{
     font-size: 17px;
     margin-bottom: 57px;
-    margin-top: -10px;
   }
   .page-form__element{
     display: flex;
@@ -308,8 +312,8 @@
     }
     
     &--fio{
-      padding-top: 40px;
-      margin-bottom: 26px;
+      padding-top: 42px;
+      margin-bottom: 30px;
     }
   }
   .page-form__field-group{
@@ -318,7 +322,7 @@
     width: 100%;
   }
   .page-form__title{
-    width: 165px;
+    width: 166px;
     flex-shrink: 0;
 
     &::after{
@@ -328,17 +332,19 @@
   .page-form__title-line{
     background: transparent;
     margin-top: 16px;
+    padding-left: 2px;
   }
   .page-form__field--checkbox{
-    margin-bottom: 26px;
+    margin-bottom: 25px;
+    width: 47%;
   }
-  .page-form__field--block{
-    margin-bottom: 24px;
+  .page-form__field--checkbox:nth-child(2n+1){
+    width: 52.5%
   }
   .page-form__textarea{
     font-size: 19px;
   }
-  .page-form__text, 
+  .page-form__text,
   .page-form__tel,
   .page-form__email{
     margin-bottom: 0;
@@ -374,8 +380,11 @@
       margin-right: 26px;
     }
   }
-  .page-form__field--checkbox{
-    width: 50%;
+  .page-form__field:first-child .page-form__name--radio:before{
+    margin-top: 0;
+  }
+  .page-form__field:first-child .page-form__name--radio:after{
+    margin-top: 0;
   }
   .page-form__radio:checked + .page-form__name--radio::after{
     margin-top: -10px;
@@ -389,18 +398,17 @@
     width: 28px;
   }
   .page-form__name-full{
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     margin-right: 25px;
-    padding-top: 0;
+    padding-top: 0px;
+    padding-left: 2px;
   }
   .page-form__icon-wrap {
     right: 24px;
   }
-  .page-form__icon{
-    right: 24px;
-  }
   .page-form__field--block{
     display: flex;
+    margin-bottom: 22px;
   }
   .page-form__footer{
     padding-top: 40px;
@@ -422,10 +430,12 @@
   .page-form__info{
     padding-left: 225px;
     padding-right: 225px;
+    margin-top: -9px;
   }
   .page-form__title{
-    text-align: center;
     width: 175px;
+    padding-left: 59px;
+    box-sizing: border-box;
   }
   .page-form__element{
     &--fio,
@@ -434,6 +444,19 @@
     &--info{
       padding-right: 225px;
     }
+    
+    &--phone{
+      padding-top: 51px;
+      padding-bottom: 25px;
+    }
+    
+    &--mail{
+      padding-bottom: 50px;
+    }
+  }
+  .page-form__tel,
+  .page-form__email{
+    height: 50px;
   }
   .page-form__footer{
     padding-right: 225px;
@@ -442,6 +465,15 @@
   }
   .page-form__field--checkbox{
     width: 30%;
+  }
+  .page-form__field--checkbox:nth-child(2n+1){
+    width: 30%;
+  }
+  .page-form__icon-wrap{
+    right: 4px;
+  }
+  .page-form__field--block{
+    margin-bottom: 23px;
   }
   .page-form__icon{
     right: 10px;

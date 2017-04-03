@@ -3,7 +3,6 @@ $color-black: #000000;
 $color-dark-gray: #444444;
 
 @mixin clearfix(){
-
   &::after, 
   &::before{
     content: "";
@@ -21,7 +20,7 @@ $background: transparent,
 $color: #fff,
 $hover: #fff,
 $scale:1)
-{			
+{
   display: block;
   font-family: $font-family, "Arial", sans-serif;
   font-size: $font_size;
@@ -36,9 +35,6 @@ $scale:1)
   -moz-transition: all 100ms linear;
   transition: all 100ms linear;
 }
-
-//медиа 
-
 @mixin adaptive($media){
   @if $media == pc{
     @media screen and (min-width: 1150px){@content}

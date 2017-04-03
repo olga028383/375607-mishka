@@ -27,7 +27,7 @@
   display: inline-block;
   vertical-align: middle;
   color: $color-black;
-  font-size: 19px; 
+  font-size: 19px;
   line-height: 1;
   font-family: "Opensansbold", "Arial", sans-serif;
   text-decoration: none;
@@ -61,5 +61,10 @@
   }
   .page-footer__logo{
     width: 200px;
+  }
+}
+@include adaptive(pc){
+  .page-footer{
+    padding-top: 48px;
   }
 }

@@ -1,6 +1,6 @@
 .about-us{
-  padding-top: 25px;
-  margin-bottom: 56px;
+  padding-top: 28px;
+  margin-bottom: 54px;
   font-size: 0;
 }
 .about-us__container{
@@ -9,24 +9,41 @@
 }
 .about-us__title{
   font-size: 25px;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
   margin-top: 0;
+  text-indent: -2px;
 }
 .about-us__list{
   padding-left: 0;
 }
 .about-us__icon-wrap{
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
+  
+  &--style{
+    margin-bottom: 25px;
+  }
+  
+  &--heart{
+    padding-top: 4px;
+    padding-bottom: 3px;
+  }
+  
+  &--manufacturer{
+    margin-left: -5px;
+    margin-bottom: 25px;
+  }
+  
+  &--gift{
+    margin-bottom: 21px;
+  }
 }
 .about-us__icon{
-  width: 48px;
-  height: 35px;
   fill: $color-green;
 }
 .about-us__description{
   display: block;
-  font-size: 17px; 
+  font-size: 17px;
   line-height: 1.2;
   font-family: "Opensansbold", "Arial", sans-serif;
   margin-bottom: 30px;
@@ -34,6 +51,7 @@
 @include adaptive(tablet){
   .about-us{
     margin-bottom: 25px;
+    padding-top: 30px;
   }
   .about-us__container{
     padding-left: 50px;
@@ -41,7 +59,9 @@
   }
   .about-us__title{
     font-size: 43px;
-    margin-bottom: 44px;
+    margin-bottom: 48px;
+    text-indent: -5px;
+    letter-spacing: -0.3px;
   }
   .about-us__list{
     display: flex;
@@ -49,6 +69,10 @@
   }
   .about-us__item{
     width: 50%;
+    
+    &:nth-child(2n+1){
+      
+    }
   }
   .about-us__description{
     width: 300px;
@@ -58,7 +82,8 @@
 }
 @include adaptive(pc){
   .about-us {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
+    padding-top: 34px;
   }
   .about-us__container{
     padding-left: 225px;
@@ -66,7 +91,7 @@
   }
   .about-us__title{
     font-size: 53px;
-    margin-bottom: 40px;
+    margin-bottom: 49px;
   }
   .about-us__description{
     margin-bottom: 56px;

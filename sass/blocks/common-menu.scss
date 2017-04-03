@@ -6,7 +6,7 @@
 @include adaptive(pc){
   .сommon-menu{
     display: block;
-    width: 50%
+    width: 50%;
   }
   .сommon-menu__item{
     display: inline-block;
@@ -14,11 +14,11 @@
   }
   .сommon-menu__link{
     display: block;
-    font-size: 15px; 
-    line-height: 1;
+    font-size: 15px;
+    line-height: 24px;
     font-family: "Opensansbold", "Arial", sans-serif;
     color: #231f20;
-    padding: 22px 58px 0 0;
+    padding: 18px 56px 0 0;
     text-decoration: none;
     transition: all 0.2s linear;
     letter-spacing: 0.3px;

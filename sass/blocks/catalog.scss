@@ -6,7 +6,7 @@
   padding: 0 30px;
 }
 .catalog__item{
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 @include interval(768px, 1150px){
   .catalog__list{
@@ -22,7 +22,7 @@
     flex-wrap: wrap;
   }
   .catalog__item{
-    margin: 0 0 60px;
+    margin: 0 0 56px;
     width: 316px;
   }
 }

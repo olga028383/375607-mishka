@@ -1,6 +1,6 @@
 .title{
-  font-size: 27px; 
-  line-height: 1.4;
+  font-size: 27px;
+  line-height: 30px;
   font-family: "Opensansbold", "Arial", sans-serif;
   color: #231f20;
 }
@@ -22,10 +22,12 @@
 @include adaptive(tablet){
   .title{
     font-size: 43px;
+    line-height: 50px;
   }
 }
 @include adaptive(pc){
   .title{
     font-size: 53px;
+    line-height: 57px
   }
 }

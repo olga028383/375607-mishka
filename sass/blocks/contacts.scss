@@ -3,10 +3,10 @@
   position: relative;
 }
 .contacts__title{
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 1.2;
   font-family: "Opensansbold", "Arial", sans-serif;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   margin-top: 0;
 }
 .contacts__list{
@@ -15,11 +15,11 @@
   margin-bottom: 0;
 }
 .contacts__item{
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   font-size: 15px;
-  line-height: 1.9;
+  line-height: 2;
 }
 .contacts__item-description{
   overflow: hidden;
@@ -28,13 +28,14 @@
   margin-left: 30px;
   margin-top: 0;
   margin-bottom: 8px;
+  line-height: 2;
   
   &--mail{
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
     color: $color-dark-gray;
-    line-height: 1.8;
+    line-height: 2;
     transition: all 0.2s linear;
     margin-bottom: 0;
 
@@ -48,6 +49,7 @@
 
     span{
       border-bottom: 1px solid $color-green;
+      display: inline-block;
     }
   }
 }
@@ -68,9 +70,10 @@
     font-size: 43px;
     padding: 14px 0 15px;
     border-right: 4px solid #221f1f;
-    margin-right: 43px;
-    margin-bottom: 32px;
+    margin-right: 46px;
+    margin-bottom: 34px;
     position: relative;
+    text-indent: -5px;
   }
   .contacts__title::after{
     content: "";
@@ -87,7 +90,7 @@
     border-left-width: 40px;
   }
   .contacts__list{
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
   .contacts__item{
     font-size: 17px;
@@ -95,6 +98,10 @@
   }
   .contacts__item-description{
     margin-left: 23px;
+    line-height: 1.8;
+  }
+  .contants__btn{
+    font-size: 17px;
   }
 }
 @include interval(768px, 1149px){
@@ -127,10 +134,11 @@
     box-sizing: border-box;
     border-right: none;
     border-left: 4px solid #221f1f;
-    margin-left: 46px;
-    padding: 8px 0 14px 102px;
-    margin-bottom: 30px;
+    margin-left: 44px;
+    padding: 6px 0 14px 108px;
+    margin-bottom: 32px;
     margin-top: 0;
+    letter-spacing: -0.3px;
     
     &::after{
       left: -5px;
@@ -139,7 +147,7 @@
   .contacts__list{
     padding-left: 155px;
     box-sizing: border-box;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
     margin-top: 0;
   }
   .contants__btn{
@@ -148,5 +156,8 @@
   }
   .contacts__item{
     margin-bottom: 28px;
+  }
+  .contacts__item-description {
+    margin-left: 25px;
   }
 }

@@ -12,7 +12,7 @@
 .menu__link,
 .menu__text{
   display: block;
-  font-size: 17px; 
+  font-size: 17px;
   line-height: 1;
   font-family: "Opensansbold", "Arial", sans-serif;
   color: #231f20;
@@ -58,9 +58,9 @@
   .menu__link,
   .menu__text{
     display: block;
-    font-size: 15px; 
-    line-height: 1;
-    padding: 22px 35px 0 0;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 18px 32px 0 0;
     height: auto;
   }
 }
@@ -69,22 +69,14 @@
     order: -1;
     position: static;
     padding-left: 0;
-  }
-  .menu__list{
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    order: -1;
-    height: 90px;
-    width: 380px;
-    overflow: hidden;
+    height: 88px;
   }
   .menu__item{
-    height: 90px;
+    height: 100%;
 
     &:first-child{
       border-right: 1px solid #d3d2d2;
-      margin-right: 32px;
+      margin-right: 28px;
     }
     
     &:first-child .menu__link,
@@ -100,6 +92,7 @@
     display: flex;
     align-items: center;
     font-size: 17px;
+    line-height: 1.2;
   }
   .menu__text{
     

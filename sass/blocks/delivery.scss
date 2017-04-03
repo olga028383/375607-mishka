@@ -4,8 +4,8 @@
 @include adaptive(tablet){
   .delivery{
     display: block;
-    line-height: 1.7;
-    padding: 20px 0 22px 0;
+    line-height: 24px;
+    padding: 16px 0 22px 0;
     text-align: right;
     box-sizing: border-box;
     font-size: 15px;
@@ -13,5 +13,3 @@
     margin-top: -40px;
   }
 }
-
-

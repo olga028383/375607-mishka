@@ -44,6 +44,9 @@
   &:hover{
     transform: scaleY(1.05);
   }
+  div{
+    margin-top: 2px;
+  }
 }
 .nav-home__text{
   padding: 10px 0;
@@ -94,8 +97,15 @@
 
   .nav-home__link{
     line-height: 1.5;
-    padding: 28px 36px 24px;
+    padding: 28px 36px 22px;
     font-size: 20px;
+    
+    div{
+      margin-top: 0;
+    }
+  }
+  .nav-home__icon-wrap--interior{
+    width: 50px;
   }
 }
 @include adaptive(pc){
@@ -105,9 +115,6 @@
   .nav-home__link{
     padding-left: 38px;
     padding-right: 34px;
-    padding-bottom: 18px;
-  }
-  .nav-home__icon-wrap--interior{
-    width: 50px;
+    padding-bottom: 16px;
   }
 }

@@ -17,7 +17,7 @@
   padding-bottom: 22px;
 }
 .news__title{
-  font-size: 17px; 
+  font-size: 17px;
   line-height: 1.5;
   font-family: "Opensansbold", "Arial", sans-serif;
   display: table-cell;
@@ -30,8 +30,8 @@
 }
 .news__icon-video{
   fill: $color-green;
-  width: 38px;
-  height: 34px;
+  width: 34px;
+  height: 32px;
 }
 .news__video{
   position: relative;
@@ -104,7 +104,7 @@
 }
 @include adaptive(tablet){
   .news{
-    margin-bottom: 58px;
+    margin-bottom: 62px;
   }
   .news__container{
     display: flex;
@@ -119,8 +119,8 @@
   }
   .news__title-wrap{
     padding-bottom: 0;
-    padding-left: 42px;
-    padding-top: 32px;
+    padding-left: 40px;
+    padding-top: 34px;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
     padding-right: 42px;
@@ -129,15 +129,15 @@
     font-size: 20px;
   }
   .news__description-wrap{
-    padding-left: 42px;
+    padding-left: 40px;
     padding-right: 42px;
     padding-bottom: 46px;
-    padding-top: 84px;
-    margin-top: -70px;
+    padding-top: 80px;
+    margin-top: -66px;
   }
   .news__description{
     font-size: 15px;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
     line-height: 2;
   }
   .news__title-icon{
@@ -151,20 +151,24 @@
 }
 @include adaptive(pc){
   .news{
-    margin-bottom: 106px;
+    margin-bottom: 104px;
   }
   .news__container{
     flex-wrap: wrap;
   }
   .news__title-wrap{
-    padding-bottom: 30px;
+    padding-bottom: 28px;
     align-self: flex-end;
     width: 366px;
-    padding-left: 78px;
+    padding-left: 76px;
     padding-right: 76px;
     border-top: 1px solid #ececec;
     border-left: none;
     padding-top: 40px;
+  }
+  .news__play {
+    margin-top: -38px;
+    margin-left: -44px;
   }
   .news__title{
     font-size: 20px;
@@ -172,7 +176,7 @@
   }
   .news__title-icon{
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 21px;
   }
   .news__description-wrap{
     border-left: none;
@@ -204,7 +208,8 @@
     background-image: url(../img/video-desktop@1x.jpg);
   }
   .news__btn{
-    width: 228px;
+    width: 226px;
+    margin-left: 2px;
   }
   @include adaptive(retina){
     .news__video{

@@ -1,14 +1,14 @@
 .page{
-  font-size: 15px; 
+  font-size: 15px;
   line-height: 1.6;
   font-family: "Opensans", "Arial", sans-serif;
   color: $color-dark-gray;
   min-width: 320px;
   margin: 0;
+  position: relative;
 }
 @include adaptive(tablet){
   .page{
     font-size: 17px;
   }
 }
-

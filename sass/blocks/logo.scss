@@ -42,7 +42,7 @@
     margin-right: 0;
 
     &--header{
-      height: 90px;
+      height: 88px;
       width: 45%;
       flex-grow: 1;
     }
@@ -57,11 +57,15 @@
   .logo--header{
     align-self: center;
     width: auto;
-    margin-left: 7%;
+    margin-left: 7.3%;
     padding-top: 26px;
     
     svg{
       margin: 0 auto;
+    }
+    
+    img{
+      padding-top: 2px;
     }
   }
 }

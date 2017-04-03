@@ -33,7 +33,7 @@
   }
 }
 .menu-service__text{
-  font-size: 17px; 
+  font-size: 17px;
   line-height: 1;
   font-family: "Opensansbold", "Arial", sans-serif;
   color: #231f20;
@@ -50,8 +50,6 @@
 .menu-service__icon{
   fill: #d3d2d2;
   transition: all 0.2s linear;
-  width: 20px;
-  height: 20px;
 }
 @include interval(0, 767px){
   .menu-service__item{
@@ -61,9 +59,9 @@
 @include adaptive(tablet){
   .menu-service{
     display: flex;
-    width: 345px;
+    width: 348px;
     position: static;
-    height: 90px;
+    height: 88px;
     order: -1;
     z-index: 0;
   }
@@ -77,13 +75,19 @@
     align-items: center;
     height: 100%;
   }
+  .menu-service__icon-wrap{
+    width: 82px;
+  }
   .menu-service__search{
     display: none;
   }
   .menu-service__text{
-    font-size: 17px; 
-    line-height: 1;
+    font-size: 17px;
+    line-height: 24px;
   }
 }
-
-
+@include adaptive(tablet){
+  .menu-service{
+    width: 350px;
+  }
+}

@@ -1,5 +1,5 @@
 .map {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   text-align: center;
   background-color: #f1f1f1;
   background: url(../../img/map-mobile@1x.jpg);
@@ -37,6 +37,7 @@
   .map{
     margin-bottom: 54px;
     background-image: url(../../img/map-tablet@1x.jpg);
+    height: 458px;
   }
   @include adaptive(retina){
     .map{
@@ -48,7 +49,7 @@
   .map{
     position: absolute;
     top: 0;
-    left: 54.5%;
+    left: 54.4%;
     width: 45.5%;
     bottom: 0;
     height: 100%;
