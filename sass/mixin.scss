@@ -3,12 +3,12 @@ $color-black: #000000;
 $color-dark-gray: #444444;
 
 @mixin clearfix(){
-  &::after, 
+  &::after,
   &::before{
     content: "";
     display: table;
   }
-  
+
   &::after{
     clear: both;
   }
@@ -56,12 +56,12 @@ $scale:1)
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
-  
+
   @include adaptive(tablet){
     padding-left: 50px;
     padding-right: 50px;
   }
-  
+
   @include adaptive(pc){
     max-width: 1150px;
   }

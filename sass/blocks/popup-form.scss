@@ -32,18 +32,18 @@
   &:hover{
     border-color: #c7c7c7;
   }
-  
+
   &:active{
     border-color: #62d1ba;
   }
-  
+
   &:first-child{
     margin-left: 0;
   }
 }
 .popup-form__field{
   display: none;
-  
+
   &:checked + .popup-form__item{
     border-color: $color-green;
   }
@@ -55,7 +55,7 @@
   width: 264px;
   margin: 0 auto;
   cursor: pointer;
-  
+
   &:hover{
     background: $color-dark-gray;
     border-color: $color-dark-gray;

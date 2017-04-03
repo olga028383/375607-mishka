@@ -29,7 +29,7 @@
   &:hover{
     opacity: 0.3;
   }
-  
+
   &:active{
     opacity: 0.6;
   }
@@ -78,12 +78,12 @@
       border-right: 1px solid #d3d2d2;
       margin-right: 28px;
     }
-    
+
     &:first-child .menu__link,
-    &:first-child .menu__text{
+      &:first-child .menu__text{
       padding-right: 36px;
     }
-  }   
+  }
   .menu__link,
   .menu__text{
     padding: 10px 0;
@@ -95,7 +95,7 @@
     line-height: 1.2;
   }
   .menu__text{
-    
+
     &--search{
       display: none;
     }

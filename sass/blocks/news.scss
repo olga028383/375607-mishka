@@ -5,7 +5,7 @@
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
-  
+
   &:hover .news__description-wrap{
     box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.2);
   }
@@ -64,7 +64,7 @@
   background: transparent;
   padding: 0;
   outline: none;
-  
+
   &:active{
     outline: none;
   }
@@ -74,11 +74,11 @@
   height: 76px;
   transition: all 0.2s linear;
   fill: $color-green;
-  
+
   &:hover{
     transform: scale(1.2);
   }
-  
+
   &:active{
     transform: scale(0.8);
     opacity: 0.8;

@@ -19,21 +19,21 @@
 .about-us__icon-wrap{
   display: block;
   margin-bottom: 16px;
-  
+
   &--style{
     margin-bottom: 25px;
   }
-  
+
   &--heart{
     padding-top: 4px;
     padding-bottom: 3px;
   }
-  
+
   &--manufacturer{
     margin-left: -5px;
     margin-bottom: 25px;
   }
-  
+
   &--gift{
     margin-bottom: 21px;
   }
@@ -69,9 +69,9 @@
   }
   .about-us__item{
     width: 50%;
-    
+
     &:nth-child(2n+1){
-      
+
     }
   }
   .about-us__description{

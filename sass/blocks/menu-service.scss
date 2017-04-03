@@ -19,15 +19,15 @@
   &:hover .menu-service__icon{
     fill: $color-green;
   }
-  
+
   &:active .menu-service__icon{
     opacity: 0.5;
   }
-  
+
   &:hover .menu-service__text{
     opacity: 0.6;
   }
-  
+
   &:active .menu-service__text{
     opacity: 0.3;
   }

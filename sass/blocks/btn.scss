@@ -1,14 +1,12 @@
 .btn{
-	@include btn_link(17px, Opensansbold, 48px, transparent, $color-dark-gray);
-	border: 2px solid $color-dark-gray;
-    transition: all 0.2s linear; 
-    
-    &:hover{
-      background: $color-dark-gray;
-      color: #ffffff;
-    }
-    
-    &:active{
-      opacity: 0.8;
-    }
+  @include btn_link(17px, Opensansbold, 48px, transparent, $color-dark-gray);
+  border: 2px solid $color-dark-gray;
+  transition: all 0.2s linear;
+  &:hover{
+    background: $color-dark-gray;
+    color: #ffffff;
+  }
+  &:active{
+    opacity: 0.8;
+  }
 }

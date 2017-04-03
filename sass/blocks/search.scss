@@ -23,11 +23,11 @@
     fill: #d3d2d2;
     transition: all 0.2s linear;
   }
-  
+
   &:hover path{
     fill: $color-green;
   }
-  
+
   &:active path{
     opacity: 0.5;
   }
