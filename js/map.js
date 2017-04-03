@@ -12,8 +12,9 @@
     myMap.geoObjects.add(myPlacemark);
   }
 
-  if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-    ymaps.ready(init);
-  }
-
+  /*  if (window.location.pathname === ' ' || window.location.pathname === 'index.html') {
+   
+   }
+   */
+  ymaps.ready(init);
 })();
