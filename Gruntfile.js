@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
@@ -17,8 +17,8 @@ module.exports = function(grunt) {
         options: {
           processors: [
             require("autoprefixer")({browsers: [
-              "last 2 versions"
-            ]}),
+                "last 2 versions"
+              ]}),
             require("css-mqpacker")({
               sort: true
             })
@@ -46,82 +46,82 @@ module.exports = function(grunt) {
         }
       }
     },
-    csso:{
-      style:{
-        options:{
+    csso: {
+      style: {
+        options: {
           report: "gzip"
         },
-        files:{
-          "build/css/style.min.css":["build/css/style.css"]
+        files: {
+          "build/css/style.min.css": ["build/css/style.css"]
         }
       }
     },
-    imagemin:{
-      images:{
-        options:{
+    imagemin: {
+      images: {
+        options: {
           optimizationLevel: 3,
           progressive: true
         },
-        files:[{
-          expand:true,
-          src:["build/img/**/*.{png,jpg,gif}"]
-        }]
+        files: [{
+            expand: true,
+            src: ["build/img/**/*.{png,jpg,gif}"]
+          }]
       }
     },
-    svgstore:{
-      options:{
-        svg:{
+    svgstore: {
+      options: {
+        svg: {
           style: "display:none"
         }
       },
-      symbols:{
-        files:{
-          "build/img/symbols.svg":["img/icons/*.svg"]
+      symbols: {
+        files: {
+          "build/img/symbols.svg": ["img/icons/*.svg"]
         }
       }
     },
-    svgmin:{
-      symbols:{
-        files:[{
-            expand:true,
-            src:["build/img/icons/*.svg"]
-        }]
+    svgmin: {
+      symbols: {
+        files: [{
+            expand: true,
+            src: ["build/img/icons/*.svg"]
+          }]
       }
     },
     watch: {
-      html:{
-        files:["*.html"],
-        tasks:["copy:html"]
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
       },
       style: {
         files: ["sass/**/*.{scss,sass}"],
-        tasks: ["sass", "postcss","csso"]
+        tasks: ["sass", "postcss", "csso"]
       }
     },
-    copy:{
-      build:{
-        files:[{
-          expand: true,
-          src:[
-            "fonts/**/*.{woff,woff2}",
-            "img/**",
-            "js/**",
-            "*.html"
-          ],
-          dest: "build"
-        }]
+    copy: {
+      build: {
+        files: [{
+            expand: true,
+            src: [
+              "fonts/**/*.{woff,woff2}",
+              "img/**",
+              "js/**",
+              "*.html"
+            ],
+            dest: "build"
+          }]
       },
-      html:{
-        files:[{
-           expand: true,
-           src:[
-            "*.html"
-          ],
-           dest: "build"
-        }]
+      html: {
+        files: [{
+            expand: true,
+            src: [
+              "*.html"
+            ],
+            dest: "build"
+          }]
       }
     },
-    clean:{
+    clean: {
       build: ["build"]
     }
   });
