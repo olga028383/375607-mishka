@@ -31,7 +31,7 @@
 
   &--manufacturer{
     margin-left: -5px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   &--gift{
@@ -57,9 +57,12 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+  .about-us__icon-wrap--manufacturer {
+    margin-bottom: 23px;
+  }
   .about-us__title{
     font-size: 43px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     text-indent: -5px;
     letter-spacing: -0.3px;
   }
@@ -70,19 +73,35 @@
   .about-us__item{
     width: 50%;
 
-    &:nth-child(2n+1){
-
+    &:nth-of-type(1) {
+      order: 1;
+    }
+    &:nth-of-type(2) {
+      order: 3;
+    }
+    &:nth-of-type(3) {
+      order: 5;
+    }
+    &:nth-of-type(4) {
+      order: 2;
+    }
+    &:nth-of-type(5) {
+      order: 4;
+    }
+    &:nth-of-type(6) {
+      order: 6;
     }
   }
   .about-us__description{
     width: 300px;
     font-size: 19px;
     margin-bottom: 58px;
+    letter-spacing: .8px;
   }
 }
 @include adaptive(pc){
   .about-us {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
     padding-top: 34px;
   }
   .about-us__container{
@@ -94,6 +113,6 @@
     margin-bottom: 49px;
   }
   .about-us__description{
-    margin-bottom: 56px;
+    margin-bottom: 58px;
   }
 }

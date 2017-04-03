@@ -14,22 +14,22 @@
 .nav-home__item{
   background: $color-green;
   transition: all 0.2s linear;
-  
+
   &--right{
     background: #56c3b2;
     margin-top: -1px;
   }
-  
+
   &:hover .nav-home__link{
     transform: translateY(-5px);
   }
-  
+
   &:active{
     opacity: 0.8;
   }
 }
 .nav-home__link{
-  font-size: 19px; 
+  font-size: 19px;
   line-height: 1.3;
   font-family: "Opensansbold", "Arial", sans-serif;
   color: #ffffff;
@@ -99,7 +99,7 @@
     line-height: 1.5;
     padding: 28px 36px 22px;
     font-size: 20px;
-    
+
     div{
       margin-top: 0;
     }
