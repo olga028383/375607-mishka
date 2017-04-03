@@ -124,7 +124,6 @@ module.exports = function(grunt) {
     clean:{
       build: ["build"]
     }
-    
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
@@ -132,10 +131,11 @@ module.exports = function(grunt) {
   grunt.registerTask("build", [
     "clean",
     "copy",
-    "sass", 
+    "sass",
     "postcss",
     "csso",
     "symbols",
-    "imagemin"
+    "imagemin",
+    "serve"
   ]);
 };
